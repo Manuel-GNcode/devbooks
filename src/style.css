@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+}
+
+@theme {
+  --color-primary: #137fec;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+  --color-card-dark: #1a242f;
+  --color-card-light: #ffffff;
+
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --font-noto-sans: "Noto Sans", sans-serif;
+}
