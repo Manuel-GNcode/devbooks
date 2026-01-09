@@ -19,9 +19,18 @@
   --color-background-dark: #101922;
   --color-card-dark: #1a242f;
   --color-card-light: #ffffff;
-  --color-txt-light: #111418;
-  --color-txt-dark: #ffffff;
+  --color-txt-light: #ffffff;
+  --color-txt-dark: #111418;
 
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "Noto Sans", sans-serif;
+}
+
+@layer {
+  .active-style {
+    @apply cursor-pointer active:scale-90;
+  }
+  .nav-a {
+    @apply text-sm font-medium hover:text-primary transition-colors;
+  }
 }
