@@ -19,7 +19,9 @@
   --color-background-dark: #101922;
   --color-card-dark: #1a242f;
   --color-card-light: #ffffff;
+  --color-txt-light: #111418;
+  --color-txt-dark: #ffffff;
 
-  --font-grotesk: "Space Grotesk", sans-serif;
-  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Noto Sans", sans-serif;
 }
