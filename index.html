@@ -98,14 +98,14 @@
           </div>
           <div
             class="relative flex items-center bg-card-light dark:bg-card-dark rounded-xl shadow-2xl p-2 border border-gray-200 dark:border-[#283039]">
-            <div class="px-4 stroke-gray-500 dark:stroke-gray-400">
+            <div class="px-4 stroke-gray-600 dark:stroke-gray-400">
               <svg width="25px" height="25px" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </div>
             <input
-              class="flex-1 bg-transparent border-none focus:ring-0 text-txt-light dark:text-white placeholder-gray-400 h-12 text-lg outline-0"
+              class="flex-1 bg-transparent border-none focus:ring-0 text-txt-dark dark:text-txt-light placeholder-gray-400 h-12 text-lg outline-0"
               placeholder="Search by title, author, or ISBN..." type="text" />
             <button
-              class="bg-[#283039] dark:bg-[#283039] hover:bg-primary stroke-txt-dark p-3 rounded-lg transition-colors duration-200 ml-4 active:scale-90">
+              class="bg-gray-600 dark:bg-gray-400/20 hover:bg-primary stroke-txt-light p-3 rounded-lg transition-colors duration-200 ml-4 active-style">
               <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </button>
           </div>
@@ -113,16 +113,11 @@
         <!-- Chips / Quick Filters -->
         <div class="mt-8 flex flex-wrap justify-center gap-3">
           <p class="text-sm text-gray-500 dark:text-gray-400 py-1.5 mr-2">Popular:</p>
-          <a class="px-4 py-1.5 rounded-full bg-gray-200 dark:bg-[#283039] hover:bg-primary hover:text-white dark:hover:bg-primary text-sm font-medium transition-all"
-            href="#">React</a>
-          <a class="px-4 py-1.5 rounded-full bg-gray-200 dark:bg-[#283039] hover:bg-primary hover:text-white dark:hover:bg-primary text-sm font-medium transition-all"
-            href="#">Python</a>
-          <a class="px-4 py-1.5 rounded-full bg-gray-200 dark:bg-[#283039] hover:bg-primary hover:text-white dark:hover:bg-primary text-sm font-medium transition-all"
-            href="#">System Design</a>
-          <a class="px-4 py-1.5 rounded-full bg-gray-200 dark:bg-[#283039] hover:bg-primary hover:text-white dark:hover:bg-primary text-sm font-medium transition-all"
-            href="#">Rust</a>
-          <a class="px-4 py-1.5 rounded-full bg-gray-200 dark:bg-[#283039] hover:bg-primary hover:text-white dark:hover:bg-primary text-sm font-medium transition-all"
-            href="#">Machine Learning</a>
+          <a class="filter-a active-style" href="#">React</a>
+          <a class="filter-a active-style" href="#">Python</a>
+          <a class="filter-a active-style" href="#">System Design</a>
+          <a class="filter-a active-style" href="#">Rust</a>
+          <a class="filter-a active-style" href="#">Machine Learning</a>
         </div>
       </div>
     </section>
@@ -130,7 +125,7 @@
     <!-- Trending Section -->
     <section class="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       <div class="flex items-center justify-between mb-8">
-        <h2 class="text-2xl font-bold text-txt-light dark:text-white flex items-center gap-2">
+        <h2 class="text-2xl font-bold flex items-center gap-2">
           <span class="stroke-primary">
           <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M20.0005 7L14.1543 12.9375C14.0493 13.0441 13.9962 13.0976 13.9492 13.1396C13.1899 13.8193 12.0416 13.8193 11.2822 13.1396C11.2352 13.0976 11.1817 13.0442 11.0767 12.9375C10.9716 12.8308 10.9191 12.7774 10.8721 12.7354C10.1127 12.0557 8.96397 12.0557 8.20461 12.7354C8.15771 12.7773 8.10532 12.8305 8.00078 12.9367L4 17M20.0005 7L20 13M20.0005 7H14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
@@ -153,7 +148,7 @@
               data-alt="Book cover mockup with abstract minimalist geometric design"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
             <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
               <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
               4.9
             </div>
@@ -161,14 +156,14 @@
           <div class="p-4 flex flex-col flex-1">
             <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
             <h3
-              class="text-lg font-bold text-txt-light dark:text-txt-dark leading-tight mb-1 group-hover:text-primary transition-colors">
+              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
               Clean Architecture</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Robert C. Martin</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Robert C. Martin</p>
             <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold text-txt-light dark:text-txt-dark ">$34.99</span>
+              <span class="text-sm font-bold">$34.99</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary hover:text-white text-gray-600 dark:text-gray-300 transition-colors">
-                <span class="fill-txt-dark">
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
+                <span class="fill-txt-light">
                   <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
@@ -177,14 +172,14 @@
         </div>
         <!-- Book Card 2 -->
         <div
-          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
           <div class="relative aspect-3/4 bg-gray-800 overflow-hidden">
             <img alt="Book cover showing code on a screen with dark blue overlay"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               data-alt="Book cover showing code on a screen with dark blue overlay"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-DonN7yTwfwXdeqQBYAvN3eX1GaR9l09M-buKveoxlscWQwfm_mlo_geTldpQkZ6VERkkl49nxEc7imKKlXJg7Uc3LJhZEzELg0_NbPhTC2dQ00z30rxKcuH_mbDgwWrDrGRA-_uAeQQMRlPMzZPNVyMOjuNG1oyfFF6nDZe-2mSPDV5yDbaFwjD36Z2pLbgc2GfSVbUbR0FgNWJ-5xeYaqR8rUEfj1Y-zlIGXv9ZYJJXJUC44uNh7E0CTSnG9TzJfrUA2R2T2bc1" />
             <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
               <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
               4.8
             </div>
@@ -192,14 +187,14 @@
           <div class="p-4 flex flex-col flex-1">
             <div class="text-xs font-semibold text-primary mb-1">JavaScript</div>
             <h3
-              class="text-lg font-bold text-txt-light dark:text-txt-dark  leading-tight mb-1 group-hover:text-primary transition-colors">
+              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
               Eloquent JavaScript</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Marijn Haverbeke</p>
             <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold text-txt-light dark:text-txt-dark ">Free</span>
+              <span class="text-sm font-bold">Free</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary hover:text-white text-gray-600 dark:text-gray-300 transition-colors">
-                <span class="fill-txt-dark">
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
+                <span class="fill-txt-light">
                   <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
@@ -208,14 +203,14 @@
         </div>
         <!-- Book Card 3 -->
         <div
-          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
           <div class="relative aspect-3/4 bg-gray-800 overflow-hidden">
             <img alt="Book cover with complex colorful data visualization pattern"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               data-alt="Book cover with complex colorful data visualization pattern"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnafcrHxqHfavtEIsMk35WrUttI0RXFeI2E_5OY7DzbF3EX9qYf1Bq8LjpyLdHgKyy91QoXqhSBybdzqztGVosx_F_NOWbkr6nJXkKNG7dtdjzHj7NV6JhX3IOvfJO1T5YWurmXwwBc_7SG0hNCvyOke-hWTfAa8-D1mRLuaO0Y5JhDWn53I8slr3cBaDxdWfT85Ka6EnhyF4qQL2VTzmawYLiZXfN0NeTXlIAGL_FgiwkOTmjZetaQ3Bx7DkHkycwxfZp5HRZfyOi" />
             <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
               <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
               4.7
             </div>
@@ -223,14 +218,14 @@
           <div class="p-4 flex flex-col flex-1">
             <div class="text-xs font-semibold text-primary mb-1">Algorithms</div>
             <h3
-              class="text-lg font-bold text-txt-light dark:text-txt-dark  leading-tight mb-1 group-hover:text-primary transition-colors">
+              class="text-lg font-bold  leading-tight mb-1 group-hover:text-primary transition-colors">
               Grokking Algorithms</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Aditya Bhargava</p>
             <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold text-txt-light dark:text-txt-dark ">$42.00</span>
+              <span class="text-sm font-bold">$42.00</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary hover:text-white text-gray-600 dark:text-gray-300 transition-colors">
-                <span class="fill-txt-dark">
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
+                <span class="fill-txt-light">
                   <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
@@ -239,14 +234,14 @@
         </div>
         <!-- Book Card 4 -->
         <div
-          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
           <div class="relative aspect-3/4 bg-gray-800 overflow-hidden">
             <img alt="Book cover with sleek modern cyber security padlock illustration"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               data-alt="Book cover with sleek modern cyber security padlock illustration"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTocIDBXMULe25m1oYP3mjf3WD83NXXQghMUFBx1m8wtoT5zIiktyAIL1M0EoaedM5ittlJxRm6uKK8gO2C9klEQD6ENg9upv5iOtDqyq2zG8RHHlCpVEPUqFYPtRfq8P1MXF6P1QscoaGF7bXXQvJG70BjgxZe84PzqOF-8fONnQkN23F7SMQm0Yq_cnidDO-izVgt--KJqUTiJppZUAPoxZGAICIo5G-mwW56Qse1xsAQU58T0xKQOtj9fEHBk37q6oyi6XY0-e2" />
             <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
               <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
               5.0
             </div>
@@ -254,18 +249,100 @@
           <div class="p-4 flex flex-col flex-1">
             <div class="text-xs font-semibold text-primary mb-1">DevOps</div>
             <h3
-              class="text-lg font-bold text-txt-light dark:text-txt-dark  leading-tight mb-1 group-hover:text-primary transition-colors">
+              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
               The Phoenix Project</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Gene Kim</p>
             <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold text-txt-light dark:text-txt-dark ">$19.99</span>
+              <span class="text-sm font-bold">$19.99</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary hover:text-white text-gray-600 dark:text-gray-300 transition-colors">
-                <span class="fill-txt-dark">
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
+                <span class="fill-txt-light">
                   <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories / Topics Grid -->
+    <section class="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12 bg-gray-50 dark:bg-txt-dark">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold">Explore Topics</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <a class="categories-a group" href="#">
+          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          </span>
+          <span class="font-bold text-sm">Backend</span>
+          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+        </a>
+        <a class="categories-a group" href="#">
+          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          </span>
+          <span class="font-bold text-sm">Frontend</span>
+          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+        </a>
+        <a class="categories-a group" href="#">
+          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          </span>
+          <span class="font-bold text-sm">DevOps</span>
+          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+        </a>
+        <a class="categories-a group" href="#">
+          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          </span>
+          <span class="font-bold text-sm">Security</span>
+          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+        </a>
+        <a class="categories-a group" href="#">
+          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          </span>
+          <span class="font-bold text-sm">Cloud</span>
+          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+        </a>
+        <a class="categories-a group" href="#">
+          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          </span>
+          <span class="font-bold text-sm">Mobile</span>
+          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+      <div class="relative overflow-hidden rounded-2xl bg-card-dark border border-[#283039]">
+        <!-- Abstract BG pattern -->
+        <div class="absolute inset-0 opacity-20">
+          <svg class="h-full w-full text-primary" fill="currentColor">
+            <pattern height="20" id="pattern-circles" patternunits="userSpaceOnUse" width="20" x="0" y="0">
+              <circle cx="2" cy="2" r="1"></circle>
+            </pattern>
+            <rect fill="url(#pattern-circles)" height="100%" width="100%"></rect>
+          </svg>
+        </div>
+        <div class="relative px-6 py-12 md:px-12 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div class="md:w-1/2">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Stay updated with new releases</h2>
+            <p class="text-gray-400">Get the latest additions to our library delivered straight to your inbox. No spam, just
+              code books.</p>
+          </div>
+          <div class="md:w-1/2 w-full flex flex-col sm:flex-row gap-3">
+            <input
+              class="flex-1 bg-background-dark border border-[#283039] text-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+              placeholder="you@example.com" type="email" />
+            <button
+              class="bg-primary hover:bg-primary/90 text-white font-bold px-6 py-3 rounded-lg transition-colors whitespace-nowrap active-style">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -277,15 +354,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
         class="border-gray-200 dark:border-[#283039] flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-sm text-gray-500 dark:text-gray-400">© 2026 DevBooks Inc. All rights reserved.</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">© 2026 DevBooks Inc. All rights reserved.</p>
         <div class="flex gap-4">
-          <a class="fill-gray-500 dark:fill-gray-400 hover:fill-txt-light dark:hover:fill-txt-dark" href="#">
+          <a class="footer-a active-style" href="#">
             <svg width="20px" height="20px" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></g></svg>
           </a>
-          <a class="fill-gray-500 dark:fill-gray-400 hover:fill-txt-light dark:hover:fill-txt-dark" href="#">
+          <a class="footer-a active-style" href="#">
             <svg height="20px" width="20px" version="1.1" viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M256,151.704c-57.509,0-104.296,46.787-104.296,104.296S198.491,360.296,256,360.296 c29.867,0,56.821-12.639,75.852-32.825c19.031,20.186,45.985,32.825,75.852,32.825C465.213,360.296,512,313.509,512,256 C512,114.842,397.158,0,256,0S0,114.842,0,256s114.842,256,256,256c68.38,0,132.667-26.628,181.019-74.98l-40.226-40.226 C359.185,434.4,309.185,455.111,256,455.111C146.21,455.111,56.889,365.79,56.889,256S146.21,56.889,256,56.889 S455.111,146.21,455.111,256c0,26.14-21.267,47.407-47.407,47.407c-26.14,0-47.407-21.267-47.407-47.406V256 C360.296,198.491,313.509,151.704,256,151.704z M256,303.407c-26.14,0-47.407-21.267-47.407-47.407S229.86,208.593,256,208.593 S303.407,229.86,303.407,256S282.14,303.407,256,303.407z"></path> </g> </g> </g></svg>
           </a>
-          <a class="fill-gray-500 dark:fill-gray-400 hover:fill-txt-light dark:hover:fill-txt-dark" href="#">
+          <a class="footer-a active-style" href="#">
             <svg height="20px" width="20px" version="1.1" viewBox="0 0 32 32" xml:space="preserve"><g stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <g> <path d="M32,32h-4.57C27.43,16.875,15.125,4.572,0,4.572V0C17.641,0,32,14.355,32,32L32,32z"></path> <path d="M22.855,32h-4.57c0-10.082-8.207-18.285-18.285-18.285V9.143 C12.602,9.143,22.855,19.398,22.855,32L22.855,32z"></path> <path d="M13.715,32H9.141c0-5.043-4.098-9.141-9.141-9.141v-4.574C7.562,18.285,13.715,24.438,13.715,32 L13.715,32z"></path> <path d="M4.57,32c0-2.523-2.043-4.57-4.57-4.57V32H4.57z"></path> </g> </g> </g> </g></svg>
           </a>
         </div>
