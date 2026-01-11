@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBooks - Search results</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark text-txt-dark dark:text-txt-light min-h-screen flex flex-col font-display">
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-[#283039] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-4">
+        <!-- Logo -->
+        <div class="flex gap-8">
+          <div class="flex items-center gap-3">
+            <div>
+              <svg class="fill-primary" height="25px" width="25px" viewBox="0 0 512 512" xml:space="preserve">
+                <g stroke-width="0"></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <g>
+                  <g>
+                    <path class="st0"
+                      d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z">
+                    </path>
+                    <path class="st0"
+                      d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
+          </div>
+          <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-slate-100 dark:bg-[#283039] rounded-xl">
+            <span class="px-4 stroke-gray-600 dark:stroke-gray-400">
+              <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </span>
+            <input
+                class="w-full text-txt-dark dark:text-txt-light focus:outline-0 h-full placeholder:text-slate-500 dark:placeholder:text-gray-400"
+                placeholder="Search books, authors..." />
+          </label>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="flex gap-3">
+          <nav class="flex items-center">
+            <a class="nav-a active-style hidden md:block" href="#">My library</a>
+            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
+              <span class="fill-txt-light">
+                <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+              </span>
+            </a>
+          </nav>
+          <!-- Action Buttons -->
+          <div class="flex items-center gap-3">
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-[#283039] rounded-lg transition-colors active-style">
+              Log In
+            </button>
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20 active-style">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="flex grow flex-col w-full max-w-400 mx-auto">
+    <div class="px-4 md:px-10 py-5 flex flex-col lg:flex-row gap-8">
+      <!-- Left Sidebar -->
+      <aside class="w-full lg:w-70 shrink-0 flex flex-col gap-6">
+        <!-- Mobile Filters Toggle (Visible only on small screens) -->
+        <label class="flex md:hidden items-center min-w-40 h-10 lg:w-100 bg-slate-100 dark:bg-[#283039] rounded-xl">
+          <span class="px-4 stroke-gray-600 dark:stroke-gray-400">
+            <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24">
+              <g stroke-width="0"></g>
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g>
+                <path
+                  d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </svg>
+          </span>
+          <input
+            class="w-full text-txt-dark dark:text-txt-light focus:outline-0 h-full placeholder:text-slate-500 dark:placeholder:text-gray-400"
+            placeholder="Search books, authors..." />
+        </label>
+        <button
+          class="lg:hidden w-full flex items-center justify-between p-4 bg-white dark:bg-[#1A232C] rounded-lg shadow-sm">
+          <span class="font-bold">Filters</span>
+          <span class="material-symbols-outlined">filter_list</span>
+        </button>
+        <!-- Desktop Sidebar Content -->
+        <div class="hidden lg:flex flex-col gap-8 sticky top-24">
+          <div class="flex flex-col">
+            <h1 class="text-slate-900 dark:text-white text-xl font-bold leading-normal mb-1">Filters</h1>
+            <p class="text-slate-500 dark:text-[#9dabb9] text-sm font-normal leading-normal">Refine your search results
+            </p>
+          </div>
+          <!-- Categories -->
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-[#9dabb9] mb-2">Categories</h3>
+            <label class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 cursor-pointer group">
+              <span class="material-symbols-outlined text-primary text-[20px]">folder</span>
+              <span class="text-primary font-medium text-sm flex-1">All Categories</span>
+              <span class="text-primary text-xs font-bold">42</span>
+            </label>
+            <label
+              class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
+              <span
+                class="material-symbols-outlined text-slate-400 dark:text-[#9dabb9] text-[20px] group-hover:text-white">code</span>
+              <span
+                class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal group-hover:text-slate-900 dark:group-hover:text-white">Programming</span>
+            </label>
+            <label
+              class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
+              <span
+                class="material-symbols-outlined text-slate-400 dark:text-[#9dabb9] text-[20px] group-hover:text-white">dns</span>
+              <span
+                class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal group-hover:text-slate-900 dark:group-hover:text-white">System
+                Design</span>
+            </label>
+            <label
+              class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
+              <span
+                class="material-symbols-outlined text-slate-400 dark:text-[#9dabb9] text-[20px] group-hover:text-white">security</span>
+              <span
+                class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal group-hover:text-slate-900 dark:group-hover:text-white">Cybersecurity</span>
+            </label>
+          </div>
+          <div class="h-px bg-slate-200 dark:bg-[#283039] w-full"></div>
+          <!-- Filter Groups -->
+          <div class="flex flex-col gap-4">
+            <!-- Languages -->
+            <div>
+              <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-[#9dabb9] mb-3">Language</h3>
+              <div class="flex flex-col gap-2">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input checked=""
+                      class="peer size-4 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-[#283039] checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0"
+                      type="checkbox" />
+                    <span
+                      class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none material-symbols-outlined text-[14px]">check</span>
+                  </div>
+                  <span
+                    class="text-slate-600 dark:text-slate-300 text-sm group-hover:text-primary transition-colors">Python
+                    (18)</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input
+                      class="peer size-4 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-[#283039] checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0"
+                      type="checkbox" />
+                    <span
+                      class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none material-symbols-outlined text-[14px]">check</span>
+                  </div>
+                  <span
+                    class="text-slate-600 dark:text-slate-300 text-sm group-hover:text-primary transition-colors">JavaScript
+                    (12)</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input
+                      class="peer size-4 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-[#283039] checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0"
+                      type="checkbox" />
+                    <span
+                      class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none material-symbols-outlined text-[14px]">check</span>
+                  </div>
+                  <span class="text-slate-600 dark:text-slate-300 text-sm group-hover:text-primary transition-colors">Java
+                    (8)</span>
+                </label>
+              </div>
+            </div>
+            <!-- Price Range -->
+            <div class="mt-2">
+              <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-[#9dabb9] mb-3">Price Range
+              </h3>
+              <div class="flex items-center gap-4 mb-2">
+                <input
+                  class="w-20 rounded bg-slate-100 dark:bg-[#283039] border-none text-center text-sm text-slate-900 dark:text-white font-medium p-2"
+                  type="text" value="$0" />
+                <span class="text-slate-400">-</span>
+                <input
+                  class="w-20 rounded bg-slate-100 dark:bg-[#283039] border-none text-center text-sm text-slate-900 dark:text-white font-medium p-2"
+                  type="text" value="$150" />
+              </div>
+              <input
+                class="w-full h-1 bg-slate-200 dark:bg-[#283039] rounded-lg appearance-none cursor-pointer accent-primary"
+                type="range" />
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Main Content Area -->
+      <main class="flex flex-col flex-1 min-w-0">
+        <!-- Header & Chips -->
+        <div class="flex flex-col mb-6">
+          <h2 class="text-slate-900 dark:text-white tracking-tight text-[28px] font-bold leading-tight text-left pb-3">
+            Search Results for "Algorithms"</h2>
+          <div class="flex gap-3 py-2 flex-wrap items-center">
+            <button
+              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3">
+              <p class="text-slate-700 dark:text-white text-sm font-medium leading-normal">Python</p>
+              <span class="material-symbols-outlined text-[18px]">close</span>
+            </button>
+            <button
+              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3">
+              <p class="text-slate-700 dark:text-white text-sm font-medium leading-normal">Publication: 2023+</p>
+              <span class="material-symbols-outlined text-[18px]">close</span>
+            </button>
+            <button
+              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full border border-dashed border-slate-300 dark:border-[#9dabb9] hover:border-primary pl-3 pr-3 text-slate-500 dark:text-[#9dabb9] hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[18px]">add</span>
+              <p class="text-sm font-medium leading-normal">Add Filter</p>
+            </button>
+            <div class="ml-auto flex items-center gap-3">
+              <span class="text-slate-500 dark:text-[#9dabb9] text-sm hidden sm:block">42 results found</span>
+              <div class="h-6 w-px bg-slate-300 dark:bg-[#283039] hidden sm:block"></div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-slate-500 dark:text-[#9dabb9]">Sort by:</span>
+                <button class="flex items-center gap-1 text-sm font-bold text-slate-900 dark:text-white">
+                  Relevance
+                  <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+              </div>
+              <div class="flex bg-slate-100 dark:bg-[#283039] rounded-lg p-1 gap-1">
+                <button class="p-1 rounded bg-white dark:bg-txt-dark shadow-sm text-primary">
+                  <span class="material-symbols-outlined text-[20px]">grid_view</span>
+                </button>
+                <button class="p-1 rounded text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">view_list</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Books Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Abstract algorithmic network visualization in blue and purple"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
+              </div>
+              <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
+              <div class="absolute bottom-0 left-0 p-4">
+                <div
+                  class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 w-fit">
+                  Best Seller</div>
+              </div>
+              <button
+                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Grokking Algorithms: An Illustrated Guide</h3>
+              </div>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Aditya Bhargava</p>
+              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star_half</span>
+                <span class="text-slate-400 text-xs ml-1">(1,240)</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+                An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
+                practical problems you face every day as a programmer.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Python</span>
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Beginner</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <span class="text-slate-900 dark:text-white font-bold text-lg">$35.00</span>
+                <button
+                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all">View
+                  Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Code syntax on a dark screen with glowing green text"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhwBjqC6TQVcowez27ZIsymm4lrvUMS0Np6750gTTtycsC3QfMtI7OdTAhr7kKWtsCuvXHKC_afkY4d0i5tdfX22bm3WM64wmrQo-srCerqju6DsK5FFzyD1s0Npt_PzVoSzaV71-HMCXuM-G7M_p1XFNkCxg1icdf5ARjcw8XmL0lBwdzLVRkakEjJmPRntJGBqmDytjUSTShQxjGjUliGulurzTOgKIuADVtdL8Yg1fnn2AA04bCjb2NaAzQipgY23NDgNnAWS-G');">
+              </div>
+              <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
+              <button
+                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Introduction to Algorithms, 4th Edition</h3>
+              </div>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Thomas H. Cormen</p>
+              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current text-slate-600">star</span>
+                <span class="text-slate-400 text-xs ml-1">(342)</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+                A comprehensive update of the leading algorithms text, with new material on matchings in bipartite graphs,
+                online algorithms, and machine learning.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Theory</span>
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Advanced</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <span class="text-slate-900 dark:text-white font-bold text-lg">$89.99</span>
+                <button
+                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
+                  Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Clean desk setup with laptop showing code"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcsNRDE5W8UiZ1mtS_LI8K9YF5Pdg_3BOqMNFd_ZlVOV3hlxSBj5QkY6lWDnfZwYSLySqcFXKijftUrCJfwC-f1b3hJh-o5XOkYbvyHKdxPOsO3clft3xvoDPec3bUyqd8SpZfnfgdidgCf0kJTmh2b0RAkhq4_9rgcTNE2yNevCLg7SrTe7F2kpoTaqze7C_GVhutSIf_3vKdOAZHsoaQt5Nn7RbE4l7-B7BLwMrf55QuI3cvupv2KgJh9aMcc6kh0Pkv_E_w94BV');">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
+              <div class="absolute bottom-0 left-0 p-4">
+                <div
+                  class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 w-fit">
+                  New Arrival</div>
+              </div>
+              <button
+                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Algorithms in Python: From Scratch</h3>
+              </div>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Sarah J. Miller</p>
+              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star_border</span>
+                <span class="text-slate-400 text-xs ml-1">(56)</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+                A practical approach to understanding data structures and algorithms using Python 3. Perfect for coding
+                interviews and self-taught developers.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Python</span>
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Intermediate</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <span class="text-slate-900 dark:text-white font-bold text-lg">$42.50</span>
+                <button
+                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
+                  Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Abstract geometric shapes in orange and dark grey"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnZaiJejCimveas12MxoftGzOmY9rPtCxoPp973sBE78A0jALA1m71_b4Fp8XR-MbjsMaHaojZjLTd5qhHJ9IzpgQ_5weIjQXqq-8HcBDBFPP8S1S_WZhM9LIHxBenJhmj_cD_rLMZi4xAKQLSk9u7pBcfQkvRcP_hLpF0XB17UtdmNMpH2p9vqIGW4vzDTJSDZWoArIiy9iBjUPGKYEjfon_EDwAirjiLd0Aa5iAqdeZjNgp2-gmjIi79UnKna97_ykYc6hi8wBRL');">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
+              <button
+                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Daily Coding Problem</h3>
+              </div>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Alex Miller &amp; Lawrence Wu</p>
+              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="text-slate-400 text-xs ml-1">(890)</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+                Get exceptionally good at coding interviews by solving one difficult problem every day.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Interview</span>
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Practice</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <span class="text-slate-900 dark:text-white font-bold text-lg">$24.00</span>
+                <button
+                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
+                  Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Rust programming language code on screen"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsTSsf-3YWaNnhe4TulZhEsDSoZRELEAJ5kS8Gr4uhJSpXA9eKPcUEuvqrfvmQC8tXwXnC3slIDlpdLcOtlo8jtdryHcf-1UmpsC8U90w3MGt7WwXKDG9M0D1hOerJ8KmFKDxdf_P3dwGNAmY2mXQvc5dK8yNeKU9jETVhwgvUMo4JbPqySvzYQOTuO2VaKSfBUE6par9jGOoJVD0a5LLiFNjLHB2xHgguSltOd-gOnB-To2luFYvGjgNkQXj5RPIsMn1FMgTR7ypf');">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
+              <button
+                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Rust in Action</h3>
+              </div>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Tim McNamara</p>
+              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current text-slate-600">star</span>
+                <span class="text-slate-400 text-xs ml-1">(210)</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+                Systems programming with Rust. A hands-on guide to the language for robust and efficient software.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Rust</span>
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Systems</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <span class="text-slate-900 dark:text-white font-bold text-lg">$59.99</span>
+                <button
+                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
+                  Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="JavaScript code on a monitor with blurred background"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFkfU_geQhQ2xNTugDaznfKRaC-r4yMl9MzjszJP1ZInkqaFfczDq6uVFQv6Miy4c27HYldh5C3ma4SnVdX5brXkSnT4CmndxUqpROw2l4pyZyWX4aoJuYVumuLdto2TniBwLg3NG6hAapFFtHSfDAYfSJh4QB0GmfsYREqUT2N1PCzOb44eWdRN5NMu5rLFjGfEZDbwAtQ_fbP3F8k4t2kJ--nCZLL5jT0ht-wQf_VPeRfVTUcb8lZsXgG63OwMbJKsvLdGjgcXTM');">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
+              <button
+                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Learning JavaScript Data Structures and Algorithms</h3>
+              </div>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Loiane Groner</p>
+              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star_half</span>
+                <span class="material-symbols-outlined text-[16px] fill-current text-slate-600">star</span>
+                <span class="text-slate-400 text-xs ml-1">(95)</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+                Write complex and powerful code using the latest ES8 specifications. A must-read for JS developers wanting
+                to deepen their knowledge.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">JavaScript</span>
+                <span
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Web</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <span class="text-slate-900 dark:text-white font-bold text-lg">$39.99</span>
+                <button
+                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
+                  Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="flex justify-center mt-12 mb-8">
+          <div
+            class="flex items-center gap-2 bg-white dark:bg-[#1A232C] p-2 rounded-lg border border-slate-200 dark:border-[#2A3441] shadow-sm">
+            <button
+              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-500 dark:text-[#9dabb9] transition-colors disabled:opacity-50">
+              <span class="material-symbols-outlined text-[20px]">chevron_left</span>
+            </button>
+            <button
+              class="flex items-center justify-center size-9 rounded bg-primary text-white font-bold text-sm">1</button>
+            <button
+              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-600 dark:text-white font-medium text-sm transition-colors">2</button>
+            <button
+              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-600 dark:text-white font-medium text-sm transition-colors">3</button>
+            <span class="text-slate-400 px-1">...</span>
+            <button
+              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-600 dark:text-white font-medium text-sm transition-colors">8</button>
+            <button
+              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-500 dark:text-[#9dabb9] transition-colors">
+              <span class="material-symbols-outlined text-[20px]">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
