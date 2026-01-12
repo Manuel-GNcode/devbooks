@@ -13,7 +13,7 @@
       <div class="flex items-center justify-between h-16 gap-4">
         <!-- Logo -->
         <div class="flex gap-8">
-          <div class="flex items-center gap-3">
+          <a href="index.html" class="flex items-center gap-3">
             <div>
               <svg class="fill-primary" height="25px" width="25px" viewBox="0 0 512 512" xml:space="preserve">
                 <g stroke-width="0"></g>
@@ -31,7 +31,7 @@
               </svg>
             </div>
             <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
-          </div>
+          </a>
           <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-slate-100 dark:bg-[#283039] rounded-xl">
             <span class="px-4 stroke-gray-600 dark:stroke-gray-400">
               <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
@@ -47,8 +47,8 @@
           <nav class="flex items-center">
             <a class="nav-a active-style hidden md:block" href="#">My library</a>
             <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors active-style">
-              <span class="fill-txt-light">
-                <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+              <span class="fill-txt-light size-4">
+                <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
               </span>
             </a>
           </nav>
@@ -190,42 +190,25 @@
       <main class="flex flex-col flex-1 min-w-0">
         <!-- Header & Chips -->
         <div class="flex flex-col mb-6">
-          <h2 class="text-slate-900 dark:text-white tracking-tight text-[28px] font-bold leading-tight text-left pb-3">
+          <h2 class="tracking-tight text-[28px] font-bold leading-tight text-left pb-3">
             Search Results for "Algorithms"</h2>
           <div class="flex gap-3 py-2 flex-wrap items-center">
             <button
-              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3">
+              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3 active-style">
               <p class="text-slate-700 dark:text-white text-sm font-medium leading-normal">Python</p>
-              <span class="material-symbols-outlined text-[18px]">close</span>
+              <span class="size-4 fill-txt-light">
+                <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
+              </span>
             </button>
             <button
-              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3">
+              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3 active-style">
               <p class="text-slate-700 dark:text-white text-sm font-medium leading-normal">Publication: 2023+</p>
-              <span class="material-symbols-outlined text-[18px]">close</span>
-            </button>
-            <button
-              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full border border-dashed border-slate-300 dark:border-[#9dabb9] hover:border-primary pl-3 pr-3 text-slate-500 dark:text-[#9dabb9] hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-[18px]">add</span>
-              <p class="text-sm font-medium leading-normal">Add Filter</p>
+              <span class="size-4 fill-txt-light">
+                <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
+              </span>
             </button>
             <div class="ml-auto flex items-center gap-3">
               <span class="text-slate-500 dark:text-[#9dabb9] text-sm hidden sm:block">42 results found</span>
-              <div class="h-6 w-px bg-slate-300 dark:bg-[#283039] hidden sm:block"></div>
-              <div class="flex items-center gap-2">
-                <span class="text-sm text-slate-500 dark:text-[#9dabb9]">Sort by:</span>
-                <button class="flex items-center gap-1 text-sm font-bold text-slate-900 dark:text-white">
-                  Relevance
-                  <span class="material-symbols-outlined text-[20px]">expand_more</span>
-                </button>
-              </div>
-              <div class="flex bg-slate-100 dark:bg-[#283039] rounded-lg p-1 gap-1">
-                <button class="p-1 rounded bg-white dark:bg-txt-dark shadow-sm text-primary">
-                  <span class="material-symbols-outlined text-[20px]">grid_view</span>
-                </button>
-                <button class="p-1 rounded text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
-                  <span class="material-symbols-outlined text-[20px]">view_list</span>
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -233,22 +216,13 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           <!-- Card 1 -->
           <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
             <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 data-alt="Abstract algorithmic network visualization in blue and purple"
                 style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
               </div>
               <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
-              <div class="absolute bottom-0 left-0 p-4">
-                <div
-                  class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 w-fit">
-                  Best Seller</div>
-              </div>
-              <button
-                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
-                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-              </button>
             </div>
             <div class="p-5 flex flex-col flex-1">
               <div class="flex justify-between items-start mb-1">
@@ -258,11 +232,21 @@
               </div>
               <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Aditya Bhargava</p>
               <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star_half</span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
                 <span class="text-slate-400 text-xs ml-1">(1,240)</span>
               </div>
               <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
@@ -276,247 +260,127 @@
                   class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Beginner</span>
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <span class="text-slate-900 dark:text-white font-bold text-lg">$35.00</span>
+                <button class="bg-gray-400/30 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-txt-light">
+                    <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                  </span>
+                </button>
                 <button
-                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all">View
+                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
                   Details</button>
               </div>
             </div>
           </div>
           <!-- Card 2 -->
           <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
             <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                data-alt="Code syntax on a dark screen with glowing green text"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhwBjqC6TQVcowez27ZIsymm4lrvUMS0Np6750gTTtycsC3QfMtI7OdTAhr7kKWtsCuvXHKC_afkY4d0i5tdfX22bm3WM64wmrQo-srCerqju6DsK5FFzyD1s0Npt_PzVoSzaV71-HMCXuM-G7M_p1XFNkCxg1icdf5ARjcw8XmL0lBwdzLVRkakEjJmPRntJGBqmDytjUSTShQxjGjUliGulurzTOgKIuADVtdL8Yg1fnn2AA04bCjb2NaAzQipgY23NDgNnAWS-G');">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                data-alt="Abstract algorithmic network visualization in blue and purple"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
               </div>
               <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
-              <button
-                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
-                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-              </button>
             </div>
             <div class="p-5 flex flex-col flex-1">
               <div class="flex justify-between items-start mb-1">
                 <h3
                   class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                  Introduction to Algorithms, 4th Edition</h3>
+                  Grokking Algorithms: An Illustrated Guide</h3>
               </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Thomas H. Cormen</p>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Aditya Bhargava</p>
               <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current text-slate-600">star</span>
-                <span class="text-slate-400 text-xs ml-1">(342)</span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="text-slate-400 text-xs ml-1">(1,240)</span>
               </div>
               <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
-                A comprehensive update of the leading algorithms text, with new material on matchings in bipartite graphs,
-                online algorithms, and machine learning.
+                An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
+                practical problems you face every day as a programmer.
               </p>
               <div class="flex items-center gap-2 mb-4 flex-wrap">
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Theory</span>
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Python</span>
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Advanced</span>
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Beginner</span>
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <span class="text-slate-900 dark:text-white font-bold text-lg">$89.99</span>
+                <button class="bg-gray-400/30 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-txt-light">
+                    <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                  </span>
+                </button>
                 <button
-                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
+                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
                   Details</button>
               </div>
             </div>
           </div>
           <!-- Card 3 -->
           <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
-            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                data-alt="Clean desk setup with laptop showing code"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcsNRDE5W8UiZ1mtS_LI8K9YF5Pdg_3BOqMNFd_ZlVOV3hlxSBj5QkY6lWDnfZwYSLySqcFXKijftUrCJfwC-f1b3hJh-o5XOkYbvyHKdxPOsO3clft3xvoDPec3bUyqd8SpZfnfgdidgCf0kJTmh2b0RAkhq4_9rgcTNE2yNevCLg7SrTe7F2kpoTaqze7C_GVhutSIf_3vKdOAZHsoaQt5Nn7RbE4l7-B7BLwMrf55QuI3cvupv2KgJh9aMcc6kh0Pkv_E_w94BV');">
+            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                data-alt="Abstract algorithmic network visualization in blue and purple"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
               </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
-              <div class="absolute bottom-0 left-0 p-4">
-                <div
-                  class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 w-fit">
-                  New Arrival</div>
-              </div>
-              <button
-                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
-                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-              </button>
+              <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
             </div>
             <div class="p-5 flex flex-col flex-1">
               <div class="flex justify-between items-start mb-1">
                 <h3
                   class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                  Algorithms in Python: From Scratch</h3>
+                  Grokking Algorithms: An Illustrated Guide</h3>
               </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Sarah J. Miller</p>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Aditya Bhargava</p>
               <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star_border</span>
-                <span class="text-slate-400 text-xs ml-1">(56)</span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="size-4 fill-amber-300">
+                  <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+                </span>
+                <span class="text-slate-400 text-xs ml-1">(1,240)</span>
               </div>
               <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
-                A practical approach to understanding data structures and algorithms using Python 3. Perfect for coding
-                interviews and self-taught developers.
+                An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
+                practical problems you face every day as a programmer.
               </p>
               <div class="flex items-center gap-2 mb-4 flex-wrap">
                 <span
                   class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Python</span>
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Intermediate</span>
+                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Beginner</span>
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <span class="text-slate-900 dark:text-white font-bold text-lg">$42.50</span>
+                <button class="bg-gray-400/30 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-txt-light">
+                    <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                  </span>
+                </button>
                 <button
-                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
-                  Details</button>
-              </div>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
-            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                data-alt="Abstract geometric shapes in orange and dark grey"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnZaiJejCimveas12MxoftGzOmY9rPtCxoPp973sBE78A0jALA1m71_b4Fp8XR-MbjsMaHaojZjLTd5qhHJ9IzpgQ_5weIjQXqq-8HcBDBFPP8S1S_WZhM9LIHxBenJhmj_cD_rLMZi4xAKQLSk9u7pBcfQkvRcP_hLpF0XB17UtdmNMpH2p9vqIGW4vzDTJSDZWoArIiy9iBjUPGKYEjfon_EDwAirjiLd0Aa5iAqdeZjNgp2-gmjIi79UnKna97_ykYc6hi8wBRL');">
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
-              <button
-                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
-                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-              </button>
-            </div>
-            <div class="p-5 flex flex-col flex-1">
-              <div class="flex justify-between items-start mb-1">
-                <h3
-                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                  Daily Coding Problem</h3>
-              </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Alex Miller &amp; Lawrence Wu</p>
-              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="text-slate-400 text-xs ml-1">(890)</span>
-              </div>
-              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
-                Get exceptionally good at coding interviews by solving one difficult problem every day.
-              </p>
-              <div class="flex items-center gap-2 mb-4 flex-wrap">
-                <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Interview</span>
-                <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Practice</span>
-              </div>
-              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <span class="text-slate-900 dark:text-white font-bold text-lg">$24.00</span>
-                <button
-                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
-                  Details</button>
-              </div>
-            </div>
-          </div>
-          <!-- Card 5 -->
-          <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
-            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                data-alt="Rust programming language code on screen"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsTSsf-3YWaNnhe4TulZhEsDSoZRELEAJ5kS8Gr4uhJSpXA9eKPcUEuvqrfvmQC8tXwXnC3slIDlpdLcOtlo8jtdryHcf-1UmpsC8U90w3MGt7WwXKDG9M0D1hOerJ8KmFKDxdf_P3dwGNAmY2mXQvc5dK8yNeKU9jETVhwgvUMo4JbPqySvzYQOTuO2VaKSfBUE6par9jGOoJVD0a5LLiFNjLHB2xHgguSltOd-gOnB-To2luFYvGjgNkQXj5RPIsMn1FMgTR7ypf');">
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
-              <button
-                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
-                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-              </button>
-            </div>
-            <div class="p-5 flex flex-col flex-1">
-              <div class="flex justify-between items-start mb-1">
-                <h3
-                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                  Rust in Action</h3>
-              </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Tim McNamara</p>
-              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current text-slate-600">star</span>
-                <span class="text-slate-400 text-xs ml-1">(210)</span>
-              </div>
-              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
-                Systems programming with Rust. A hands-on guide to the language for robust and efficient software.
-              </p>
-              <div class="flex items-center gap-2 mb-4 flex-wrap">
-                <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Rust</span>
-                <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Systems</span>
-              </div>
-              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <span class="text-slate-900 dark:text-white font-bold text-lg">$59.99</span>
-                <button
-                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
-                  Details</button>
-              </div>
-            </div>
-          </div>
-          <!-- Card 6 -->
-          <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden border border-slate-200 dark:border-[#2A3441] hover:border-primary/50 dark:hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
-            <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-800">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                data-alt="JavaScript code on a monitor with blurred background"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFkfU_geQhQ2xNTugDaznfKRaC-r4yMl9MzjszJP1ZInkqaFfczDq6uVFQv6Miy4c27HYldh5C3ma4SnVdX5brXkSnT4CmndxUqpROw2l4pyZyWX4aoJuYVumuLdto2TniBwLg3NG6hAapFFtHSfDAYfSJh4QB0GmfsYREqUT2N1PCzOb44eWdRN5NMu5rLFjGfEZDbwAtQ_fbP3F8k4t2kJ--nCZLL5jT0ht-wQf_VPeRfVTUcb8lZsXgG63OwMbJKsvLdGjgcXTM');">
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-[#1A232C] to-transparent opacity-80"></div>
-              <button
-                class="absolute top-3 right-3 p-2 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-primary transition-colors opacity-0 group-hover:opacity-100">
-                <span class="material-symbols-outlined text-[20px]">bookmark_border</span>
-              </button>
-            </div>
-            <div class="p-5 flex flex-col flex-1">
-              <div class="flex justify-between items-start mb-1">
-                <h3
-                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                  Learning JavaScript Data Structures and Algorithms</h3>
-              </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Loiane Groner</p>
-              <div class="flex items-center gap-1 text-yellow-400 text-sm mb-4">
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[16px] fill-current">star_half</span>
-                <span class="material-symbols-outlined text-[16px] fill-current text-slate-600">star</span>
-                <span class="text-slate-400 text-xs ml-1">(95)</span>
-              </div>
-              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
-                Write complex and powerful code using the latest ES8 specifications. A must-read for JS developers wanting
-                to deepen their knowledge.
-              </p>
-              <div class="flex items-center gap-2 mb-4 flex-wrap">
-                <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">JavaScript</span>
-                <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Web</span>
-              </div>
-              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <span class="text-slate-900 dark:text-white font-bold text-lg">$39.99</span>
-                <button
-                  class="bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">View
+                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
                   Details</button>
               </div>
             </div>
@@ -527,8 +391,10 @@
           <div
             class="flex items-center gap-2 bg-white dark:bg-[#1A232C] p-2 rounded-lg border border-slate-200 dark:border-[#2A3441] shadow-sm">
             <button
-              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-500 dark:text-[#9dabb9] transition-colors disabled:opacity-50">
-              <span class="material-symbols-outlined text-[20px]">chevron_left</span>
+              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-500 dark:text-[#9dabb9] transition-colors disabled:opacity-50 active-style">
+              <span class="stroke-txt-light size-6">
+                <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15 6L9 12L15 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </span>
             </button>
             <button
               class="flex items-center justify-center size-9 rounded bg-primary text-white font-bold text-sm">1</button>
@@ -540,8 +406,10 @@
             <button
               class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-600 dark:text-white font-medium text-sm transition-colors">8</button>
             <button
-              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-500 dark:text-[#9dabb9] transition-colors">
-              <span class="material-symbols-outlined text-[20px]">chevron_right</span>
+              class="flex items-center justify-center size-9 rounded hover:bg-slate-100 dark:hover:bg-[#283039] text-slate-500 dark:text-[#9dabb9] transition-colors active-style">
+              <span class="stroke-txt-light size-6">
+                <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M9 6L15 12L9 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </span>
             </button>
           </div>
         </div>
