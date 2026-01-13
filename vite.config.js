@@ -8,7 +8,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        rules: 'rules.html'
+        rules: 'search.html'
       }
     }
   }
