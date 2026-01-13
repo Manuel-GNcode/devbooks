@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /login.html
-Disallow: /registro.html
-Disallow: /perfil.html
-Disallow: /dashboard.html
-Disallow: /buscar.html
-
-Sitemap: https://www.devbooks.com/sitemap.xml
