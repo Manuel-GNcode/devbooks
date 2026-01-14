@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBooks | User</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-background-dark text-light min-h-screen flex flex-col font-display">
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 w-full border-b border-secondary/20 bg-background-dark backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-4">
+        <!-- Logo -->
+        <div class="flex gap-8">
+          <a href="/" class="flex items-center gap-3">
+            <div class="fill-primary size-6">
+              <svg viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g><path class="st0" d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z"></path><path class="st0" d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z"></path>
+              </g></g></svg>
+            </div>
+            <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
+          </a>
+          <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-secondary/20 rounded-xl">
+            <span class="px-3 stroke-secondary">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </span>
+            <input
+                class="w-full text-light focus:outline-0 h-full placeholder:text-secondary"
+                placeholder="Search books, authors..." />
+          </label>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="flex gap-3">
+          <nav class="flex items-center">
+            <a class="nav-a active-style hidden md:block" href="#">My library</a>
+            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-secondary/20 hover:bg-primary transition-colors active-style">
+              <span class="fill-light size-4">
+                <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+              </span>
+            </a>
+          </nav>
+          <!-- Action Buttons -->
+          <div class="flex items-center gap-3">
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-secondary/20 rounded-lg transition-colors active-style">
+              Log In
+            </button>
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20 active-style">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main
+    class="flex-1 layout-container flex flex-col items-center py-6 lg:py-10 px-4 lg:px-8 max-w-7xl mx-auto w-full">
+    <div class="flex flex-col lg:flex-row gap-8 w-full">
+      <!-- Left Sidebar -->
+      <aside class="w-full lg:w-85 shrink-0 flex flex-col gap-6">
+        <!-- Profile Card -->
+        <div class="bg-card-dark rounded-xl p-6 border border-secondary/20 flex flex-col items-center text-center">
+          <div class="relative mb-4">
+            <div class="bg-center bg-no-repeat bg-cover rounded-full size-32 border-4 border-secondary/20"
+              data-alt="User profile picture of Alex Coder"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaxuevBWZX3eAuP8vv7h3fGI9JQnGqymw1CiR64oc16PV6lzOtF3bc-XoWK8ZJbBUiKCt0nMHrwDf-dmieJycpt-qDO2gnYFBbhZndxsAoRbWL8Xhf515B7FezeQ1tw9nrK-FfTgaHkIk97dsrJlEIwUnXWL9EVmEO8C_A3QMn3uVMjyo9x6BRgNw4exsEHrxCcWbG9i_v5i8j3c4URyZo3qB2yZYtJMKtS-XzjnXk_G_rnBxR8kl2I-PJS1v_JIPPz5rYu0Cw1kXL");'>
+            </div>
+            <div
+              class="absolute bottom-0 right-0 bg-primary rounded-full p-1.5 flex items-center justify-center border-4 border-card-dark active-style">
+              <span class="size-5 fill-light">
+                <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8477 1.87868C19.6761 0.707109 17.7766 0.707105 16.605 1.87868L2.44744 16.0363C2.02864 16.4551 1.74317 16.9885 1.62702 17.5692L1.03995 20.5046C0.760062 21.904 1.9939 23.1379 3.39334 22.858L6.32868 22.2709C6.90945 22.1548 7.44285 21.8693 7.86165 21.4505L22.0192 7.29289C23.1908 6.12132 23.1908 4.22183 22.0192 3.05025L20.8477 1.87868ZM18.0192 3.29289C18.4098 2.90237 19.0429 2.90237 19.4335 3.29289L20.605 4.46447C20.9956 4.85499 20.9956 5.48815 20.605 5.87868L17.9334 8.55027L15.3477 5.96448L18.0192 3.29289ZM13.9334 7.3787L3.86165 17.4505C3.72205 17.5901 3.6269 17.7679 3.58818 17.9615L3.00111 20.8968L5.93645 20.3097C6.13004 20.271 6.30784 20.1759 6.44744 20.0363L16.5192 9.96448L13.9334 7.3787Z"></path> </g></svg>
+              </span>
+            </div>
+          </div>
+          <h1 class="text-2xl font-bold mb-1">Alex Coder</h1>
+          <p class="text-secondary text-sm mb-4">@alexcoder_99</p>
+          <p class="text-light text-base mb-4">Senior Frontend Engineer @ TechCorp</p>
+          <div class="flex flex-wrap justify-center gap-2">
+            <span
+              class="px-3 py-1 rounded-full bg-secondary/10 text-xs font-medium text-light/90 border border-secondary/20">React</span>
+            <span
+              class="px-3 py-1 rounded-full bg-secondary/10 text-xs font-medium text-light/90 border border-secondary/20">TypeScript</span>
+            <span
+              class="px-3 py-1 rounded-full bg-secondary/10 text-xs font-medium text-light/90 border border-secondary/20">Node.js</span>
+          </div>
+        </div>
+        <!-- Social Links -->
+        <div class="bg-card-dark rounded-xl p-4 border border-secondary/10 flex flex-col gap-3">
+          <h3 class="text-sm font-bold uppercase tracking-wider mb-1 px-2">Connect</h3>
+          <a class="flex items-center gap-3 p-2 rounded-lg hover:bg-secondary/10 transition-colors"
+            href="#">
+            <span class="stroke-secondary size-5">
+              <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M14 7H16C18.7614 7 21 9.23858 21 12C21 14.7614 18.7614 17 16 17H14M10 7H8C5.23858 7 3 9.23858 3 12C3 14.7614 5.23858 17 8 17H10M8 12H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </span>
+            <span class="text-sm text-secondary">github.com/alexcoder</span>
+          </a>
+          <a class="flex items-center gap-3 p-2 rounded-lg hover:bg-secondary/10 transition-colors"
+            href="#">
+            <span class="fill-secondary size-4">
+              <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M256,151.704c-57.509,0-104.296,46.787-104.296,104.296S198.491,360.296,256,360.296 c29.867,0,56.821-12.639,75.852-32.825c19.031,20.186,45.985,32.825,75.852,32.825C465.213,360.296,512,313.509,512,256 C512,114.842,397.158,0,256,0S0,114.842,0,256s114.842,256,256,256c68.38,0,132.667-26.628,181.019-74.98l-40.226-40.226 C359.185,434.4,309.185,455.111,256,455.111C146.21,455.111,56.889,365.79,56.889,256S146.21,56.889,256,56.889 S455.111,146.21,455.111,256c0,26.14-21.267,47.407-47.407,47.407c-26.14,0-47.407-21.267-47.407-47.406V256 C360.296,198.491,313.509,151.704,256,151.704z M256,303.407c-26.14,0-47.407-21.267-47.407-47.407S229.86,208.593,256,208.593 S303.407,229.86,303.407,256S282.14,303.407,256,303.407z"></path> </g> </g> </g></svg>
+            </span>
+            <span class="text-sm text-secondary">alex@techcorp.com</span>
+          </a>
+        </div>
+      </aside>
+      <!-- Main Content Area -->
+      <section class="flex-1 flex flex-col min-w-0">
+        <!-- Tabs -->
+        <div class="border-b border-secondary/20 mb-6 overflow-x-auto no-scrollbar">
+          <nav aria-label="Tabs" class="flex gap-8 px-2">
+            <a class="border-b-[3px] border-transparent text-secondary hover:text-light pb-3 pt-2 text-sm font-bold whitespace-nowrap"
+              href="#">Overview</a>
+            <a class="border-b-[3px] border-primary text-primary pb-3 pt-2 text-sm font-bold whitespace-nowrap"
+              href="#">Wishlist <span class="ml-2 bg-primary/20 text-primary px-1.5 py-0.5 rounded text-xs">14</span></a>
+            <a class="border-b-[3px] border-transparent text-secondary hover:text-light pb-3 pt-2 text-sm font-bold whitespace-nowrap"
+              href="#">Reading List</a>
+            <a class="border-b-[3px] border-transparent text-secondary hover:text-light pb-3 pt-2 text-sm font-bold whitespace-nowrap"
+              href="#">Reviews</a>
+          </nav>
+        </div>
+        <!-- Books Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Book Card 1 -->
+          <div
+            class="group relative bg-card-dark border border-secondary/20 rounded-xl overflow-hidden transition-colors">
+            <div class="aspect-2/3 w-full relative overflow-hidden bg-secondary">
+              <div
+                class="bg-center bg-no-repeat bg-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                data-alt="Cover of the book Clean Code"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZdIwWsWIS5TuYubsXgBHKsCNb4_8_S1lzIMbsFEOUOUrPP0euAasl8Hoh2sZGM7yyHpd9mefCgoctOSmJKzZNPQXtLXjXNTD_LGDXqBQqx55O7n_HlDv3suKvfgLazeNXcKIL1TUGGcBfafawvGKTFl1CAzrc52-fCbaUd0l9oeeldaS4rw9TDMtqKrfceLz-YR4aBPorm4S1iXUMqSta-d3YBJGGYobBlNlEqAvQYG8guF6u0iLE20OicIoKBru-7JqVwISS9bk6");'>
+              </div>
+              <div
+                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                <button class="bg-primary p-2 rounded-full transition-colors active-style"
+                  title="Move to Reading">
+                  <span class="size-6 fill-light block">
+                    <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M12,18.883a10.8,10.8,0,0,1-9.675-5.728,2.6,2.6,0,0,1,0-2.31A10.8,10.8,0,0,1,12,5.117a10.8,10.8,0,0,1,9.675,5.728h0a2.6,2.6,0,0,1,0,2.31A10.8,10.8,0,0,1,12,18.883ZM12,6.117a9.787,9.787,0,0,0-8.78,5.176,1.586,1.586,0,0,0,0,1.415A9.788,9.788,0,0,0,12,17.883a9.787,9.787,0,0,0,8.78-5.176,1.584,1.584,0,0,0,0-1.414h0A9.787,9.787,0,0,0,12,6.117Z"></path> <path d="M12,16.049A4.049,4.049,0,1,1,16.049,12,4.054,4.054,0,0,1,12,16.049Zm0-7.1A3.049,3.049,0,1,0,15.049,12,3.052,3.052,0,0,0,12,8.951Z"></path> <circle cx="12" cy="12" r="2.028"></circle> </g> </g> </g></svg>
+                  </span>
+                </button>
+                <button class="bg-secondary/80 text-black p-2 rounded-full hover:bg-gray-200 transition-colors active-style" title="Remove">
+                  <span class="size-6 fill-background-heavy-dark block">
+                    <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
+              </span>
+                </button>
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="text-light font-bold text-lg leading-tight truncate mb-1">Clean Code</h3>
+              <p class="text-secondary text-sm">Robert C. Martin</p>
+            </div>
+          </div>
+          <!-- Add New Card (Dashed) -->
+          <button
+            class="group flex flex-col items-center justify-center border-2 border-dashed border-secondary/20 rounded-xl min-h-75 hover:border-primary transition-all cursor-pointer">
+            <div
+              class="size-16 rounded-full bg-secondary/20 flex items-center justify-center mb-4 group-hover:bg-primary/20">
+              <span class="size-8 block stroke-light group-hover:stroke-primary transition-colors">
+                <svg viewBox="0 0 24 24" ><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <title></title> <g> <g> <g> <line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="19" y2="5"></line> <line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="5" x2="19" y1="12" y2="12"></line> </g> </g> </g> </g></svg>
+              </span>
+            </div>
+            <p class="text-secondary font-medium group-hover:text-primary">Discover More Books</p>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+    <!-- Footer -->
+  <footer class="w-full border-t border-secondary/20 bg-background-dark py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="border-gray-200 dark:border-[#283039] flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-600 dark:text-gray-400">© 2026 DevBooks Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a class="footer-a active-style" href="#">
+            <svg width="20px" height="20px" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></g></svg>
+          </a>
+          <a class="footer-a active-style" href="#">
+            <svg height="20px" width="20px" version="1.1" viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M256,151.704c-57.509,0-104.296,46.787-104.296,104.296S198.491,360.296,256,360.296 c29.867,0,56.821-12.639,75.852-32.825c19.031,20.186,45.985,32.825,75.852,32.825C465.213,360.296,512,313.509,512,256 C512,114.842,397.158,0,256,0S0,114.842,0,256s114.842,256,256,256c68.38,0,132.667-26.628,181.019-74.98l-40.226-40.226 C359.185,434.4,309.185,455.111,256,455.111C146.21,455.111,56.889,365.79,56.889,256S146.21,56.889,256,56.889 S455.111,146.21,455.111,256c0,26.14-21.267,47.407-47.407,47.407c-26.14,0-47.407-21.267-47.407-47.406V256 C360.296,198.491,313.509,151.704,256,151.704z M256,303.407c-26.14,0-47.407-21.267-47.407-47.407S229.86,208.593,256,208.593 S303.407,229.86,303.407,256S282.14,303.407,256,303.407z"></path> </g> </g> </g></svg>
+          </a>
+          <a class="footer-a active-style" href="#">
+            <svg height="20px" width="20px" version="1.1" viewBox="0 0 32 32" xml:space="preserve"><g stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <g> <path d="M32,32h-4.57C27.43,16.875,15.125,4.572,0,4.572V0C17.641,0,32,14.355,32,32L32,32z"></path> <path d="M22.855,32h-4.57c0-10.082-8.207-18.285-18.285-18.285V9.143 C12.602,9.143,22.855,19.398,22.855,32L22.855,32z"></path> <path d="M13.715,32H9.141c0-5.043-4.098-9.141-9.141-9.141v-4.574C7.562,18.285,13.715,24.438,13.715,32 L13.715,32z"></path> <path d="M4.57,32c0-2.523-2.043-4.57-4.57-4.57V32H4.57z"></path> </g> </g> </g> </g></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
