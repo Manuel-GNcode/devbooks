@@ -6,38 +6,26 @@
   <title>DevBooks - Search results</title>
   <link rel="stylesheet" href="/src/style.css">
 </head>
-<body class="bg-background-light dark:bg-background-dark text-txt-dark dark:text-txt-light min-h-screen flex flex-col font-display">
+<body class="bg-background-dark text-light min-h-screen flex flex-col font-display">
   <!-- Top Navigation -->
-  <header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-[#283039] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+  <header class="sticky top-0 z-50 w-full border-b border-secondary/20 bg-background-dark backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 gap-4">
         <!-- Logo -->
         <div class="flex gap-8">
           <a href="/" class="flex items-center gap-3">
-            <div>
-              <svg class="fill-primary" height="25px" width="25px" viewBox="0 0 512 512" xml:space="preserve">
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <g>
-                    <path class="st0"
-                      d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z">
-                    </path>
-                    <path class="st0"
-                      d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
+            <div class="fill-primary size-6">
+              <svg viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g><path class="st0" d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z"></path><path class="st0" d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z"></path>
+              </g></g></svg>
             </div>
             <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
           </a>
-          <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-slate-100 dark:bg-[#283039] rounded-xl">
-            <span class="px-4 stroke-gray-600 dark:stroke-gray-400">
-              <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-secondary/20 rounded-xl">
+            <span class="px-3 stroke-secondary">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </span>
             <input
-                class="w-full text-txt-dark dark:text-txt-light focus:outline-0 h-full placeholder:text-slate-500 dark:placeholder:text-gray-400"
+                class="w-full text-light focus:outline-0 h-full placeholder:text-secondary"
                 placeholder="Search books, authors..." />
           </label>
         </div>
@@ -46,8 +34,8 @@
         <div class="flex gap-3">
           <nav class="flex items-center">
             <a class="nav-a active-style hidden md:block" href="#">My library</a>
-            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors active-style">
-              <span class="fill-txt-light size-4">
+            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-secondary/20 hover:bg-primary transition-colors active-style">
+              <span class="fill-light size-4">
                 <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
               </span>
             </a>
@@ -55,7 +43,7 @@
           <!-- Action Buttons -->
           <div class="flex items-center gap-3">
             <button
-              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-[#283039] rounded-lg transition-colors active-style">
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-secondary/20 rounded-lg transition-colors active-style">
               Log In
             </button>
             <button
@@ -73,38 +61,37 @@
       <!-- Left Sidebar -->
       <aside class="w-full lg:w-70 shrink-0 flex flex-col gap-6">
         <!-- Mobile Filters Toggle (Visible only on small screens) -->
-        <label class="flex md:hidden items-center min-w-40 h-10 lg:w-100 bg-slate-100 dark:bg-[#283039] rounded-xl">
-          <span class="px-4 stroke-gray-600 dark:stroke-gray-400">
+        <label class="flex md:hidden items-center min-w-40 h-10 lg:w-100 bg-secondary/20 rounded-xl">
+          <span class="px-4 stroke-secondary">
             <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24">
               <g stroke-width="0"></g>
               <g stroke-linecap="round" stroke-linejoin="round"></g>
-              <g>
-                <path
+              <g><path
                   d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </g>
             </svg>
           </span>
           <input
-            class="w-full text-txt-dark dark:text-txt-light focus:outline-0 h-full placeholder:text-slate-500 dark:placeholder:text-gray-400"
+            class="w-full text-light focus:outline-0 h-full placeholder:text-secondary"
             placeholder="Search books, authors..." />
         </label>
         <button class="active-style lg:hidden w-full flex items-center justify-between p-4 bg-white dark:bg-[#1A232C] rounded-lg shadow-sm">
           <span class="font-bold">Filters</span>
-          <span class="size-6 stroke-txt-light">
+          <span class="size-6 stroke-light">
             <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M4 7H20M6.99994 12H16.9999M10.9999 17H12.9999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
           </span>
         </button>
         <!-- Desktop Sidebar Content -->
         <div class="hidden lg:flex flex-col gap-8 sticky top-24 font-body">
           <div class="flex flex-col">
-            <h1 class="text-slate-900 dark:text-white text-xl font-bold leading-normal mb-1 font-display">Filters</h1>
-            <p class="text-slate-500 dark:text-[#9dabb9] text-sm font-normal leading-normal">Refine your search results
+            <h1 class="text-xl font-bold leading-normal mb-1 font-display">Filters</h1>
+            <p class="text-secondary text-sm font-normal leading-normal">Refine your search results
             </p>
           </div>
           <!-- Categories -->
           <div class="flex flex-col gap-2">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-[#9dabb9] mb-2 font-display">Categories</h3>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-light mb-2 font-display">Categories</h3>
             <label class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 cursor-pointer group">
               <span class="size-6 stroke-primary">
                 <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M3 8.2C3 7.07989 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H9.67452C10.1637 5 10.4083 5 10.6385 5.05526C10.8425 5.10425 11.0376 5.18506 11.2166 5.29472C11.4184 5.4184 11.5914 5.59135 11.9373 5.93726L12.0627 6.06274C12.4086 6.40865 12.5816 6.5816 12.7834 6.70528C12.9624 6.81494 13.1575 6.89575 13.3615 6.94474C13.5917 7 13.8363 7 14.3255 7H17.8C18.9201 7 19.4802 7 19.908 7.21799C20.2843 7.40973 20.5903 7.71569 20.782 8.09202C21 8.51984 21 9.0799 21 10.2V15.8C21 16.9201 21 17.4802 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.07989 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
@@ -114,26 +101,26 @@
             </label>
             <label
               class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
-              <span class="size-6 stroke-gray-600 dark:stroke-gray-400 group-hover:stroke-txt-light">
+              <span class="size-6 stroke-secondary group-hover:stroke-light">
                 <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M9 8L5 11.6923L9 16M15 8L19 11.6923L15 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
               </span>
-              <span class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal group-hover:text-txt-light">Programming</span>
+              <span class="text-secondary text-sm font-medium leading-normal group-hover:text-light">Programming</span>
             </label>
             <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
-              <span class="stroke-fill-600 dark:fill-gray-400 size-5 group-hover:fill-txt-light">
+              <span class="fill-secondary size-5 group-hover:fill-light">
                 <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path fill-rule="evenodd" d="M19,3 C20.6568542,3 22,4.34314575 22,6 L22,8 C22,9.65685425 20.6568542,11 19,11 L18,11 L18,13 L19,13 C20.6568542,13 22,14.3431458 22,16 L22,18 C22,19.6568542 20.6568542,21 19,21 L5,21 C3.34314575,21 2,19.6568542 2,18 L2,16 C2,14.3431458 3.34314575,13 5,13 L6,13 L6,11 L5,11 C3.34314575,11 2,9.65685425 2,8 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 Z M19,15 L5,15 C4.44771525,15 4,15.4477153 4,16 L4,18 C4,18.5522847 4.44771525,19 5,19 L19,19 C19.5522847,19 20,18.5522847 20,18 L20,16 C20,15.4477153 19.5522847,15 19,15 Z M7,16 C7.55228475,16 8,16.4477153 8,17 C8,17.5522847 7.55228475,18 7,18 C6.44771525,18 6,17.5522847 6,17 C6,16.4477153 6.44771525,16 7,16 Z M16,11 L8,11 L8,13 L16,13 L16,11 Z M19,5 L5,5 C4.44771525,5 4,5.44771525 4,6 L4,8 C4,8.55228475 4.44771525,9 5,9 L19,9 C19.5522847,9 20,8.55228475 20,8 L20,6 C20,5.44771525 19.5522847,5 19,5 Z M7,6 C7.55228475,6 8,6.44771525 8,7 C8,7.55228475 7.55228475,8 7,8 C6.44771525,8 6,7.55228475 6,7 C6,6.44771525 6.44771525,6 7,6 Z"></path> </g></svg>
               </span>
               <span
-                class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal group-hover:text-txt-light">System
+                class="text-secondary text-sm font-medium leading-normal group-hover:text-light">System
                 Design</span>
             </label>
             <label
               class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
-              <span class="stroke-fill-600 dark:fill-gray-400 size-5 group-hover:fill-txt-light">
+              <span class="size-6 fill-secondary group-hover:fill-light">
                 <svg viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g> <path class="st0" d="M256.001,0L29.89,130.537c0,47.476,4.506,88.936,12.057,125.463C88.61,481.721,256.001,512,256.001,512 s167.389-30.279,214.053-256c7.551-36.527,12.057-77.986,12.057-125.463L256.001,0z M256.118,466.723 c-0.035-0.012-0.082-0.028-0.117-0.039v-47.672V256H140.77H91.122c-6.67-29.738-11.109-63.506-12.394-101.93L255.999,51.728h0.002 v51.73V256h115.27h49.625C385.636,413.404,287.327,456.774,256.118,466.723z"></path> </g> </g></svg>
               </span>
               <span
-                class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal group-hover:text-txt-light">Cybersecurity</span>
+                class="text-secondary text-sm font-medium leading-normal group-hover:text-light">Cybersecurity</span>
             </label>
           </div>
           <div class="h-px bg-slate-200 dark:bg-[#283039] w-full"></div>
@@ -141,19 +128,19 @@
           <div class="flex flex-col gap-4">
             <!-- Languages -->
             <div>
-              <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-[#9dabb9] mb-3 font-display">Language</h3>
+              <h3 class="text-xs font-bold uppercase tracking-wider text-light mb-3 font-display">Language</h3>
               <div class="flex flex-col gap-2">
                 <label class="flex items-center gap-3 cursor-pointer group">
                   <div class="relative flex items-center">
-                    <input checked=""
+                    <input checked
                       class="peer size-4 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-[#283039] checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox" />
-                    <span class="absolute opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-1/2 pointer-events-none stroke-txt-light size-3">
+                    <span class="absolute opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-1/2 pointer-events-none stroke-light size-3">
                       <svg viewBox="0 0 24 24" fill="none" ><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     </span>
                   </div>
                   <span
-                    class="text-slate-600 dark:text-slate-300 text-sm group-hover:text-primary transition-colors">Python
+                    class="text-secondary text-sm group-hover:text-primary transition-colors">Python
                     (18)</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer group">
@@ -161,12 +148,12 @@
                     <input
                       class="peer size-4 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-[#283039] checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox" />
-                    <span class="absolute opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-1/2 pointer-events-none stroke-txt-light size-3">
+                    <span class="absolute opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-1/2 pointer-events-none stroke-light size-3">
                       <svg viewBox="0 0 24 24" fill="none" ><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     </span>
                   </div>
                   <span
-                    class="text-slate-600 dark:text-slate-300 text-sm group-hover:text-primary transition-colors">JavaScript
+                    class="text-secondary text-sm group-hover:text-primary transition-colors">JavaScript
                     (12)</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer group">
@@ -174,11 +161,11 @@
                     <input
                       class="peer size-4 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-[#283039] checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox" />
-                    <span class="absolute opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-1/2 pointer-events-none stroke-txt-light size-3">
+                    <span class="absolute opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-1/2 pointer-events-none stroke-light size-3">
                       <svg viewBox="0 0 24 24" fill="none" ><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     </span>
                   </div>
-                  <span class="text-slate-600 dark:text-slate-300 text-sm group-hover:text-primary transition-colors">Java
+                  <span class="text-secondary text-sm group-hover:text-primary transition-colors">Java
                     (8)</span>
                 </label>
               </div>
@@ -194,16 +181,16 @@
             Search Results for "Algorithms"</h2>
           <div class="flex gap-3 py-2 flex-wrap items-center">
             <button
-              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3 active-style">
-              <p class="text-slate-700 dark:text-white text-sm font-medium leading-normal">Python</p>
-              <span class="size-4 fill-txt-light">
+              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/20 hover:bg-secondary/30 transition-colors pl-4 pr-3 active-style">
+              <p class="text-sm font-medium leading-normal text-secondary">Python</p>
+              <span class="size-4 fill-secondary">
                 <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
               </span>
             </button>
             <button
-              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#323b46] transition-colors pl-4 pr-3 active-style">
-              <p class="text-slate-700 dark:text-white text-sm font-medium leading-normal">Publication: 2023+</p>
-              <span class="size-4 fill-txt-light">
+              class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/20 hover:bg-secondary/30 transition-colors pl-4 pr-3 active-style">
+              <p class="text-secondary text-sm font-medium leading-normal">Publication: 2023+</p>
+              <span class="size-4 fill-secondary">
                 <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
               </span>
             </button>
@@ -216,8 +203,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           <!-- Card 1 -->
           <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
-            <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
+            class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-secondary">
               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 data-alt="Abstract algorithmic network visualization in blue and purple"
                 style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
@@ -227,36 +214,36 @@
             <div class="p-5 flex flex-col flex-1">
               <div class="flex justify-between items-start mb-1">
                 <h3
-                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  class="font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
                   Grokking Algorithms: An Illustrated Guide</h3>
               </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Aditya Bhargava</p>
-              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+              <p class="text-secondary/90 text-sm mb-3">Aditya Bhargava</p>
+              <p class="text-light/80 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed font-body">
                 An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
                 practical problems you face every day as a programmer.
               </p>
               <div class="flex items-center gap-2 mb-4 flex-wrap">
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Python</span>
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Python</span>
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Beginner</span>
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Beginner</span>
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <button class="bg-gray-400/30 px-2 rounded-md h-full active-style hover:bg-primary">
-                  <span class="fill-txt-light">
+                <button class="bg-secondary/20 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-light">
                     <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                   </span>
                 </button>
                 <a href="book.html"
-                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
+                  class="bg-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
                   Details</a>
               </div>
             </div>
           </div>
           <!-- Card 2 -->
           <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
-            <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
+            class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-secondary">
               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 data-alt="Abstract algorithmic network visualization in blue and purple"
                 style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
@@ -266,36 +253,36 @@
             <div class="p-5 flex flex-col flex-1">
               <div class="flex justify-between items-start mb-1">
                 <h3
-                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  class="font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
                   Grokking Algorithms: An Illustrated Guide</h3>
               </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Aditya Bhargava</p>
-              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+              <p class="text-secondary/90 text-sm mb-3">Aditya Bhargava</p>
+              <p class="text-light/80 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed font-body">
                 An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
                 practical problems you face every day as a programmer.
               </p>
               <div class="flex items-center gap-2 mb-4 flex-wrap">
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Python</span>
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Python</span>
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Beginner</span>
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Beginner</span>
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <button class="bg-gray-400/30 px-2 rounded-md h-full active-style hover:bg-primary">
-                  <span class="fill-txt-light">
+                <button class="bg-secondary/20 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-light">
                     <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                   </span>
                 </button>
                 <a href="book.html"
-                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
+                  class="bg-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
                   Details</a>
               </div>
             </div>
           </div>
           <!-- Card 3 -->
           <div
-            class="group flex flex-col bg-white dark:bg-[#1A232C] rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-black/50">
-            <div class="relative w-full aspect-16/10 overflow-hidden bg-slate-800">
+            class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-secondary">
               <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
                 data-alt="Abstract algorithmic network visualization in blue and purple"
                 style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
@@ -305,28 +292,145 @@
             <div class="p-5 flex flex-col flex-1">
               <div class="flex justify-between items-start mb-1">
                 <h3
-                  class="text-slate-900 dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  class="font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
                   Grokking Algorithms: An Illustrated Guide</h3>
               </div>
-              <p class="text-slate-500 dark:text-slate-400 text-sm mb-3">Aditya Bhargava</p>
-              <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed">
+              <p class="text-secondary/90 text-sm mb-3">Aditya Bhargava</p>
+              <p class="text-light/80 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed font-body">
                 An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
                 practical problems you face every day as a programmer.
               </p>
               <div class="flex items-center gap-2 mb-4 flex-wrap">
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Python</span>
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Python</span>
                 <span
-                  class="px-2 py-1 rounded bg-slate-100 dark:bg-[#283039] text-xs font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#38424d]">Beginner</span>
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Beginner</span>
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
-                <button class="bg-gray-400/30 px-2 rounded-md h-full active-style hover:bg-primary">
-                  <span class="fill-txt-light">
+                <button class="bg-secondary/20 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-light">
                     <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                   </span>
                 </button>
                 <a href="book.html"
-                  class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
+                  class="bg-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
+                  Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-secondary">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                data-alt="Abstract algorithmic network visualization in blue and purple"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
+              </div>
+              <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Grokking Algorithms: An Illustrated Guide</h3>
+              </div>
+              <p class="text-secondary/90 text-sm mb-3">Aditya Bhargava</p>
+              <p class="text-light/80 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed font-body">
+                An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
+                practical problems you face every day as a programmer.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Python</span>
+                <span
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Beginner</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <button class="bg-secondary/20 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-light">
+                    <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                  </span>
+                </button>
+                <a href="book.html"
+                  class="bg-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
+                  Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-secondary">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                data-alt="Abstract algorithmic network visualization in blue and purple"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
+              </div>
+              <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Grokking Algorithms: An Illustrated Guide</h3>
+              </div>
+              <p class="text-secondary/90 text-sm mb-3">Aditya Bhargava</p>
+              <p class="text-light/80 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed font-body">
+                An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
+                practical problems you face every day as a programmer.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Python</span>
+                <span
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Beginner</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <button class="bg-secondary/20 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-light">
+                    <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                  </span>
+                </button>
+                <a href="book.html"
+                  class="bg-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
+                  Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative w-full aspect-16/10 overflow-hidden bg-secondary">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                data-alt="Abstract algorithmic network visualization in blue and purple"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSTg43wl1dNEEea-AHSnWUWmjJUuLLCaOYYnz4whkj-3PZEC6qcY7Stz5BgVJW_040i_0LKucahnKCqtmebuX7RHDaY_RaAr6HO0Y_7NMQhFTfXgKhMgiXpHgxEyJWBCoiof4IAbSjcsWLoTtSPCb4u6sqJFnRjr0Sz2NCuEUuC8UuFRczrk-guR0UB8fsketPxSElEsZtjySaBV1GSOUv0qOrIfy3M7dm-oSbBmbm2bpprCXID-YhYwJqlEma68RnY2ROMuAauLx7');">
+              </div>
+              <div class="absolute inset-0 bg-linear-to-t from-[#1A232C] to-transparent opacity-80"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex justify-between items-start mb-1">
+                <h3
+                  class="font-bold text-lg leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                  Grokking Algorithms: An Illustrated Guide</h3>
+              </div>
+              <p class="text-secondary/90 text-sm mb-3">Aditya Bhargava</p>
+              <p class="text-light/80 text-sm line-clamp-3 mb-5 flex-1 leading-relaxed font-body">
+                An illustrated guide for programmers and other curious people. Learn how to apply common algorithms to the
+                practical problems you face every day as a programmer.
+              </p>
+              <div class="flex items-center gap-2 mb-4 flex-wrap">
+                <span
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Python</span>
+                <span
+                  class="px-2 py-1 rounded bg-secondary/10 text-xs font-medium text-secondary border border-secondary/20">Beginner</span>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 dark:border-[#2A3441]">
+                <button class="bg-secondary/20 px-2 rounded-md h-full active-style hover:bg-primary">
+                  <span class="fill-light">
+                    <svg width="16" height="16" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                  </span>
+                </button>
+                <a href="book.html"
+                  class="bg-primary px-4 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:bg-primary/90 transition-all active-style">View
                   Details</a>
               </div>
             </div>
@@ -362,8 +466,8 @@
       </main>
     </div>
   </div>
-    <!-- Footer -->
-  <footer class="w-full border-t border-gray-200 dark:border-[#283039] bg-background-light dark:bg-background-dark py-12">
+  <!-- Footer -->
+  <footer class="w-full border-t border-secondary/20 bg-background-dark py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
         class="border-gray-200 dark:border-[#283039] flex flex-col md:flex-row justify-between items-center gap-4">

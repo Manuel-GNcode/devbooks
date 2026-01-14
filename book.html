@@ -6,38 +6,26 @@
   <title>DevBooks - Title book</title>
   <link rel="stylesheet" href="/src/style.css">
 </head>
-<body class="bg-background-light dark:bg-background-dark text-txt-dark dark:text-txt-light min-h-screen flex flex-col font-display">
+<body class="bg-background-dark text-light min-h-screen flex flex-col font-display">
   <!-- Top Navigation -->
-  <header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-[#283039] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+  <header class="sticky top-0 z-50 w-full border-b border-secondary/20 bg-background-dark backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 gap-4">
         <!-- Logo -->
         <div class="flex gap-8">
           <a href="/" class="flex items-center gap-3">
-            <div>
-              <svg class="fill-primary" height="25px" width="25px" viewBox="0 0 512 512" xml:space="preserve">
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <g>
-                    <path class="st0"
-                      d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z">
-                    </path>
-                    <path class="st0"
-                      d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
+            <div class="fill-primary size-6">
+              <svg viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g><path class="st0" d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z"></path><path class="st0" d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z"></path>
+              </g></g></svg>
             </div>
             <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
           </a>
-          <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-slate-100 dark:bg-[#283039] rounded-xl">
-            <span class="px-4 stroke-gray-600 dark:stroke-gray-400">
-              <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-secondary/20 rounded-xl">
+            <span class="px-3 stroke-secondary">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </span>
             <input
-                class="w-full text-txt-dark dark:text-txt-light focus:outline-0 h-full placeholder:text-slate-500 dark:placeholder:text-gray-400"
+                class="w-full text-light focus:outline-0 h-full placeholder:text-secondary"
                 placeholder="Search books, authors..." />
           </label>
         </div>
@@ -46,8 +34,8 @@
         <div class="flex gap-3">
           <nav class="flex items-center">
             <a class="nav-a active-style hidden md:block" href="#">My library</a>
-            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors active-style">
-              <span class="fill-txt-light size-4">
+            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-secondary/20 hover:bg-primary transition-colors active-style">
+              <span class="fill-light size-4">
                 <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
               </span>
             </a>
@@ -55,7 +43,7 @@
           <!-- Action Buttons -->
           <div class="flex items-center gap-3">
             <button
-              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-[#283039] rounded-lg transition-colors active-style">
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-secondary/20 rounded-lg transition-colors active-style">
               Log In
             </button>
             <button
@@ -180,8 +168,8 @@
       </div>
     </div>
   </main>
-    <!-- Footer -->
-  <footer class="w-full border-t border-gray-200 dark:border-[#283039] bg-background-light dark:bg-background-dark py-12">
+  <!-- Footer -->
+  <footer class="w-full border-t border-secondary/20 bg-background-dark py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
         class="border-gray-200 dark:border-[#283039] flex flex-col md:flex-row justify-between items-center gap-4">
