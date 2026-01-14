@@ -28,7 +28,7 @@
 
 @layer {
   .active-style {
-    @apply cursor-pointer active:scale-90;
+    @apply cursor-pointer active:scale-90 transition-transform;
   }
   .nav-a {
     @apply text-sm font-medium hover:text-primary transition-colors;

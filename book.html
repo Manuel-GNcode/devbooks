@@ -76,106 +76,90 @@
         <aside class="lg:col-span-4 relative">
           <div class="sticky top-24 flex flex-col gap-6">
             <!-- Book Cover with Glow Effect -->
-            <div class="relative group">
+            <div class="relative">
               <div
-                class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
+                class="absolute -inset-1 bg-linear-to-r from-primary to-blue-600 rounded-lg blur opacity-25">
               </div>
-              <div class="relative w-full aspect-[2/3] bg-surface-dark rounded-lg overflow-hidden shadow-2xl">
+              <div class="relative w-full aspect-2/3 bg-surface-dark rounded-lg overflow-hidden shadow-2xl">
                 <div class="w-full h-full bg-cover bg-center"
                   data-alt="Cover of the book Designing Data-Intensive Applications showing a generic tech book design"
                   style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDbztgc9IRrp_b0s4_dJ9QSQVJdRTvytUoK32-qMvRWzYakFJ-QXpYpJXzS-9iS6cnlZixqjhQE3h44IvY_TqhdvZwJcUTflW_ltFUP5vErPzojyThKk70Vtg6n94A7H4t_dp2j6SKaV8Sys5Zx0A0ISLGPydTliLYEzXBWjyUZLD7af9jdSDp99HuSooMkpext8of316MnvoLBNSlJN9GGsXzqN0s2UxkJ5aLlPhs8DC5QQDt6oLy73fxKPZ0VftlgxLs5UXW5e-T');">
                 </div>
               </div>
             </div>
-            <!-- Price -->
-            <div class="flex items-end gap-2 px-1">
-              <span class="text-3xl font-bold text-[#111418] dark:text-white">$42.99</span>
-              <span class="text-lg text-text-secondary line-through mb-1">$54.99</span>
-              <span class="text-sm text-green-500 font-bold mb-1.5 ml-auto">In Stock</span>
-            </div>
             <!-- Actions -->
             <div class="flex flex-col gap-3">
               <button
-                class="flex w-full cursor-pointer items-center justify-center rounded-lg h-12 px-5 bg-primary text-white text-base font-bold shadow-lg hover:bg-blue-600 active:scale-[0.98] transition-all gap-2">
-                <span class="material-symbols-outlined">shopping_cart</span>
-                <span>Buy on Amazon</span>
+                class="flex w-full items-center justify-center rounded-lg h-12 px-5 bg-primary text-white text-base font-bold shadow-lg hover:bg-blue-600 gap-2 active-style">
+                <span class="fill-txt-light size-7">
+                  <svg viewBox="0 0 32 32" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M26,10h-6.304c0.827-0.209,1.575-0.493,1.961-0.879c1.172-1.172,1.172-3.071,0-4.243 c-1.171-1.172-3.071-1.172-4.243,0C16.49,5.803,16.105,8.779,16,10l0,0c-0.105-1.221-0.49-4.197-1.414-5.121 c-1.171-1.171-3.071-1.172-4.243,0c-1.172,1.172-1.172,3.071,0,4.243c0.386,0.386,1.134,0.67,1.961,0.879H6c-1.1,0-2,0.9-2,2v14 c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V12C28,10.9,27.1,10,26,10z M18.851,6.271c0.388-0.366,1.006-0.363,1.391,0.022 c0.382,0.382,0.39,1,0.022,1.392c-0.28,0.195-1.048,0.408-1.986,0.575C18.446,7.321,18.659,6.547,18.851,6.271z M11.757,6.293 c0.387-0.387,1.005-0.386,1.391-0.022c0.195,0.28,0.408,1.049,0.575,1.988c-0.939-0.167-1.708-0.38-1.988-0.575 C11.368,7.293,11.375,6.675,11.757,6.293z M6,26V12h6v14H6z M14,26V12h4v14H14z M26,26h-6V12h6V26z"></path> </g></svg>
+                </span>
+                <span>Get book</span>
               </button>
               <div class="flex gap-3">
                 <button
-                  class="flex flex-1 cursor-pointer items-center justify-center rounded-lg h-12 px-5 bg-[#e5e7eb] dark:bg-surface-dark text-[#111418] dark:text-white text-base font-bold hover:brightness-110 active:scale-[0.98] transition-all gap-2">
-                  <span class="material-symbols-outlined">favorite</span>
+                  class="flex flex-1 cursor-pointer items-center justify-center rounded-lg h-12 px-5 bg-gray-400/20 dark:bg-surface-dark text-base font-bold hover:brightness-110 active-style gap-2">
+                  <span class="size-5 fill-txt-light">
+                    <svg viewBox="0 0 16 16"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z"></path> </g></svg>
+                  </span>
                   <span>Wishlist</span>
                 </button>
                 <button
-                  class="flex cursor-pointer items-center justify-center rounded-lg h-12 w-12 bg-[#e5e7eb] dark:bg-surface-dark text-[#111418] dark:text-white hover:brightness-110 transition-all">
-                  <span class="material-symbols-outlined">share</span>
+                  class="flex items-center justify-center rounded-lg h-12 w-12 bg-gray-400/20 hover:brightness-110 active-style">
+                  <span class="size-5 fill-txt-light">
+                    <svg viewBox="0 0 16 16"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 6C12.6569 6 14 4.65685 14 3C14 1.34315 12.6569 0 11 0C9.34315 0 8 1.34315 8 3C8 3.22371 8.02449 3.44169 8.07092 3.65143L4.86861 5.65287C4.35599 5.24423 3.70652 5 3 5C1.34315 5 0 6.34315 0 8C0 9.65685 1.34315 11 3 11C3.70652 11 4.35599 10.7558 4.86861 10.3471L8.07092 12.3486C8.02449 12.5583 8 12.7763 8 13C8 14.6569 9.34315 16 11 16C12.6569 16 14 14.6569 14 13C14 11.3431 12.6569 10 11 10C10.2935 10 9.644 10.2442 9.13139 10.6529L5.92908 8.65143C5.97551 8.44169 6 8.22371 6 8C6 7.77629 5.97551 7.55831 5.92908 7.34857L9.13139 5.34713C9.644 5.75577 10.2935 6 11 6Z"></path> </g></svg>
+                  </span>
                 </button>
               </div>
             </div>
-            <p class="text-xs text-text-secondary text-center leading-relaxed">
-              Links on DevBooks may earn us a commission. <br />
-              <a class="underline hover:text-primary" href="#">Learn more</a>
-            </p>
           </div>
         </aside>
         <!-- Right Column: Details & Content -->
         <div class="lg:col-span-8 flex flex-col gap-10">
           <!-- Header Info -->
           <div class="flex flex-col gap-4">
-            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-[#111418] dark:text-white">
+            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
               Designing Data-Intensive Applications
             </h1>
-            <div class="flex flex-col sm:flex-row sm:items-center gap-4 text-text-secondary text-sm md:text-base">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4 text-sm md:text-base">
               <div class="flex items-center gap-2">
                 <div class="w-8 h-8 rounded-full bg-surface-dark overflow-hidden">
                   <div class="w-full h-full bg-cover bg-center" data-alt="Portrait of Martin Kleppmann"
                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5nzlSnCguhtXSh1F6oggOv2bvVAE0H6QryGmPhaEseFVJFCh-6x9T_ttmlmLoKNeHsQI3JuN97FvOULKKmgNKfi4KaVPF0Op_1Hx6Vws9E-7zFgSFNY2tQQktDGcuEzFUQC-Nfz4M84dm1Pxf_crKKz4IOAQnSr5IrEaN3Wv6CVxGyLUoSpc1sqfcT8sqSW9OD_V2Mqypx-5sP1LMxNA8ufG2NK4UEeE7labFqSHdCWWwXR65aeD0hzetclno5u2gwPlSRp5VqyRX');">
                   </div>
                 </div>
-                <span class="font-medium text-[#111418] dark:text-white">Martin Kleppmann</span>
+                <span class="font-medium">Martin Kleppmann</span>
               </div>
-              <span class="hidden sm:inline">•</span>
-              <span>O'Reilly Media</span>
-              <span class="hidden sm:inline">•</span>
-              <span>March 2017</span>
-            </div>
-            <!-- Rating Badge -->
-            <div class="flex items-center gap-2 mt-1">
-              <div class="flex text-amber-400 gap-0.5">
-                <span class="material-symbols-outlined text-[20px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[20px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[20px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[20px] fill-current">star</span>
-                <span class="material-symbols-outlined text-[20px] fill-current">star_half</span>
-              </div>
-              <span class="text-lg font-bold text-[#111418] dark:text-white">4.8</span>
-              <a class="text-primary hover:underline text-sm font-medium" href="#reviews">(1,240 reviews)</a>
+              <span class="hidden sm:inline text-gray-400">•</span>
+              <span class="text-gray-400">O'Reilly Media</span>
+              <span class="hidden sm:inline text-gray-400">•</span>
+              <span class="text-gray-400">March 2017</span>
             </div>
           </div>
           <!-- Tech Stack Chips -->
           <div class="flex flex-wrap gap-2">
             <div
-              class="flex h-8 items-center justify-center px-4 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
+              class="flex h-8 items-center justify-center px-4 rounded-full bg-gray-400/20 text-sm font-medium">
               System Design</div>
             <div
-              class="flex h-8 items-center justify-center px-4 rounded-full bg-[#e5e7eb] dark:bg-surface-dark text-[#111418] dark:text-white text-sm font-medium">
+              class="flex h-8 items-center justify-center px-4 rounded-full bg-gray-400/20 text-sm font-medium">
               Databases</div>
             <div
-              class="flex h-8 items-center justify-center px-4 rounded-full bg-[#e5e7eb] dark:bg-surface-dark text-[#111418] dark:text-white text-sm font-medium">
+              class="flex h-8 items-center justify-center px-4 rounded-full bg-gray-400/20 text-sm font-medium">
               Distributed Systems</div>
             <div
-              class="flex h-8 items-center justify-center px-4 rounded-full bg-[#e5e7eb] dark:bg-surface-dark text-[#111418] dark:text-white text-sm font-medium">
+              class="flex h-8 items-center justify-center px-4 rounded-full bg-gray-400/20 text-sm font-medium">
               Scalability</div>
             <div
-              class="flex h-8 items-center justify-center px-4 rounded-full bg-[#e5e7eb] dark:bg-surface-dark text-[#111418] dark:text-white text-sm font-medium">
+              class="flex h-8 items-center justify-center px-4 rounded-full bg-gray-400/20 text-sm font-medium">
               Backend</div>
           </div>
           <hr class="border-[#e5e7eb] dark:border-[#283039]" />
           <!-- Description -->
           <section class="flex flex-col gap-4">
-            <h3 class="text-2xl font-bold text-[#111418] dark:text-white">About this book</h3>
+            <h3 class="text-2xl font-bold">About this book</h3>
             <div
-              class="prose dark:prose-invert max-w-none text-base leading-relaxed text-[#111418]/80 dark:text-white/80">
+              class="dark:prose-invert max-w-none text-base leading-relaxed text-txt-light/80 font-body">
               <p class="mb-4">
                 Data is at the center of many challenges in system design today. Difficult issues need to be figured out,
                 such as scalability, consistency, reliability, efficiency, and maintainability. In addition, we have an
@@ -190,104 +174,31 @@
                 architects will learn how to apply those ideas in practice, and how to make full use of data in modern
                 applications.
               </p>
-              <div class="p-4 rounded-lg bg-[#e5e7eb] dark:bg-surface-dark border-l-4 border-primary">
-                <h4 class="font-bold mb-2">What you'll learn:</h4>
-                <ul class="list-none space-y-2">
-                  <li class="flex gap-2">
-                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
-                    <span>Peer under the hood of the systems you already use, and learn how to use and operate them more
-                      effectively</span>
-                  </li>
-                  <li class="flex gap-2">
-                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
-                    <span>Make informed decisions by identifying the strengths and weaknesses of different tools</span>
-                  </li>
-                  <li class="flex gap-2">
-                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
-                    <span>Navigate the trade-offs around consistency, scalability, fault tolerance, and complexity</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <!-- Table of Contents -->
-          <section class="flex flex-col gap-4">
-            <div class="flex items-center justify-between">
-              <h3 class="text-2xl font-bold text-[#111418] dark:text-white">Table of Contents</h3>
-              <button class="text-primary text-sm font-medium hover:underline">Expand all</button>
-            </div>
-            <div class="flex flex-col rounded-xl overflow-hidden border border-[#e5e7eb] dark:border-[#283039]">
-              <!-- Chapter 1 -->
-              <div class="border-b border-[#e5e7eb] dark:border-[#283039]">
-                <details class="group bg-background-light dark:bg-background-dark">
-                  <summary
-                    class="flex cursor-pointer items-center justify-between p-4 font-medium text-[#111418] dark:text-white hover:bg-[#e5e7eb] dark:hover:bg-surface-dark transition-colors">
-                    <span>Part I. Foundations of Data Systems</span>
-                    <span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span>
-                  </summary>
-                  <div class="p-4 pt-0 text-text-secondary text-sm bg-background-light dark:bg-background-dark">
-                    <ul class="flex flex-col gap-2 pl-4 border-l border-[#e5e7eb] dark:border-[#283039] ml-2 my-2">
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>1. Reliable, Scalable, and
-                          Maintainable Applications</span> <span class="opacity-50">3</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>2. Data Models and Query
-                          Languages</span> <span class="opacity-50">27</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>3. Storage and
-                          Retrieval</span> <span class="opacity-50">69</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>4. Encoding and
-                          Evolution</span> <span class="opacity-50">111</span></li>
-                    </ul>
-                  </div>
-                </details>
-              </div>
-              <!-- Chapter 2 -->
-              <div class="border-b border-[#e5e7eb] dark:border-[#283039]">
-                <details class="group bg-background-light dark:bg-background-dark">
-                  <summary
-                    class="flex cursor-pointer items-center justify-between p-4 font-medium text-[#111418] dark:text-white hover:bg-[#e5e7eb] dark:hover:bg-surface-dark transition-colors">
-                    <span>Part II. Distributed Data</span>
-                    <span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span>
-                  </summary>
-                  <div class="p-4 pt-0 text-text-secondary text-sm bg-background-light dark:bg-background-dark">
-                    <ul class="flex flex-col gap-2 pl-4 border-l border-[#e5e7eb] dark:border-[#283039] ml-2 my-2">
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>5. Replication</span> <span
-                          class="opacity-50">151</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>6. Partitioning</span>
-                        <span class="opacity-50">199</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>7. Transactions</span>
-                        <span class="opacity-50">221</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>8. The Trouble with
-                          Distributed Systems</span> <span class="opacity-50">273</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>9. Consistency and
-                          Consensus</span> <span class="opacity-50">321</span></li>
-                    </ul>
-                  </div>
-                </details>
-              </div>
-              <!-- Chapter 3 -->
-              <div>
-                <details class="group bg-background-light dark:bg-background-dark">
-                  <summary
-                    class="flex cursor-pointer items-center justify-between p-4 font-medium text-[#111418] dark:text-white hover:bg-[#e5e7eb] dark:hover:bg-surface-dark transition-colors">
-                    <span>Part III. Derived Data</span>
-                    <span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span>
-                  </summary>
-                  <div class="p-4 pt-0 text-text-secondary text-sm bg-background-light dark:bg-background-dark">
-                    <ul class="flex flex-col gap-2 pl-4 border-l border-[#e5e7eb] dark:border-[#283039] ml-2 my-2">
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>10. Batch Processing</span>
-                        <span class="opacity-50">391</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>11. Stream
-                          Processing</span> <span class="opacity-50">439</span></li>
-                      <li class="flex justify-between hover:text-primary cursor-pointer"><span>12. The Future of Data
-                          Systems</span> <span class="opacity-50">489</span></li>
-                    </ul>
-                  </div>
-                </details>
-              </div>
             </div>
           </section>
         </div>
       </div>
     </div>
   </main>
+    <!-- Footer -->
+  <footer class="w-full border-t border-gray-200 dark:border-[#283039] bg-background-light dark:bg-background-dark py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="border-gray-200 dark:border-[#283039] flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-600 dark:text-gray-400">© 2026 DevBooks Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a class="footer-a active-style" href="#">
+            <svg width="20px" height="20px" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></g></svg>
+          </a>
+          <a class="footer-a active-style" href="#">
+            <svg height="20px" width="20px" version="1.1" viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M256,151.704c-57.509,0-104.296,46.787-104.296,104.296S198.491,360.296,256,360.296 c29.867,0,56.821-12.639,75.852-32.825c19.031,20.186,45.985,32.825,75.852,32.825C465.213,360.296,512,313.509,512,256 C512,114.842,397.158,0,256,0S0,114.842,0,256s114.842,256,256,256c68.38,0,132.667-26.628,181.019-74.98l-40.226-40.226 C359.185,434.4,309.185,455.111,256,455.111C146.21,455.111,56.889,365.79,56.889,256S146.21,56.889,256,56.889 S455.111,146.21,455.111,256c0,26.14-21.267,47.407-47.407,47.407c-26.14,0-47.407-21.267-47.407-47.406V256 C360.296,198.491,313.509,151.704,256,151.704z M256,303.407c-26.14,0-47.407-21.267-47.407-47.407S229.86,208.593,256,208.593 S303.407,229.86,303.407,256S282.14,303.407,256,303.407z"></path> </g> </g> </g></svg>
+          </a>
+          <a class="footer-a active-style" href="#">
+            <svg height="20px" width="20px" version="1.1" viewBox="0 0 32 32" xml:space="preserve"><g stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <g> <path d="M32,32h-4.57C27.43,16.875,15.125,4.572,0,4.572V0C17.641,0,32,14.355,32,32L32,32z"></path> <path d="M22.855,32h-4.57c0-10.082-8.207-18.285-18.285-18.285V9.143 C12.602,9.143,22.855,19.398,22.855,32L22.855,32z"></path> <path d="M13.715,32H9.141c0-5.043-4.098-9.141-9.141-9.141v-4.574C7.562,18.285,13.715,24.438,13.715,32 L13.715,32z"></path> <path d="M4.57,32c0-2.523-2.043-4.57-4.57-4.57V32H4.57z"></path> </g> </g> </g> </g></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
