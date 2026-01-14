@@ -15,12 +15,13 @@
 
 @theme {
   --color-primary: #137fec;
-  --color-background-light: #f6f7f8;
+  --color-secondary: #99a1af;
+
   --color-background-dark: #101922;
+  --color-background-heavy-dark: #111418;
   --color-card-dark: #1a242f;
-  --color-card-light: #ffffff;
-  --color-txt-light: #ffffff;
-  --color-txt-dark: #111418;
+
+  --color-light: #ffffff;
 
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "Noto Sans", sans-serif;
@@ -28,18 +29,18 @@
 
 @layer {
   .active-style {
-    @apply cursor-pointer active:scale-90 transition-transform;
+    @apply cursor-pointer active:scale-95 transition-transform;
   }
   .nav-a {
     @apply text-sm font-medium hover:text-primary transition-colors;
   }
   .filter-a {
-    @apply px-4 py-1.5 rounded-full bg-gray-200 dark:bg-gray-400/20 hover:bg-primary hover:text-txt-light dark:hover:bg-primary text-sm font-medium transition-all;
+    @apply px-4 py-1.5 rounded-full bg-secondary/10 hover:bg-primary hover:text-light text-sm font-medium transition-all;
   }
   .footer-a {
-    @apply fill-gray-500 dark:fill-gray-400 hover:fill-txt-dark dark:hover:fill-txt-light;
+    @apply fill-gray-400 hover:fill-light;
   }
   .categories-a {
-    @apply flex flex-col items-center justify-center p-6 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-[#283039]  rounded-xl hover:bg-primary/5 hover:border-primary/50 transition-all;
+    @apply flex flex-col items-center justify-center p-6 bg-card-dark border border-secondary/20 rounded-xl hover:bg-primary/5 hover:border-primary/50 transition-all;
   }
 }

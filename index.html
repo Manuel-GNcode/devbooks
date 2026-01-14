@@ -35,36 +35,43 @@
 </head>
 
 <body
-  class="bg-background-light dark:bg-background-dark text-txt-dark dark:text-txt-light min-h-screen flex flex-col font-display">
+  class="bg-background-dark text-light min-h-screen flex flex-col font-display">
   <!-- Top Navigation -->
-  <header
-    class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-[#283039] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+  <header class="sticky top-0 z-50 w-full border-b border-secondary/20 bg-background-dark backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex items-center justify-between h-16 gap-4">
         <!-- Logo -->
-        <div class="flex items-center gap-3">
-          <div>
-            <svg class="fill-primary" height="25px" width="25px" viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g><path class="st0" d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z"></path> <path class="st0" d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z"></path> </g> </g></svg>
-          </div>
-          <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
+        <div class="flex gap-8">
+          <a href="/" class="flex items-center gap-3">
+            <div class="fill-primary size-6">
+              <svg viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g><path class="st0" d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z"></path><path class="st0" d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z"></path>
+              </g></g></svg>
+            </div>
+            <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
+          </a>
         </div>
+
         <!-- Desktop Nav -->
-        <nav class="hidden md:flex items-center gap-8">
-          <a class="nav-a active-style" href="#">Categories</a>
-          <a class="nav-a active-style" href="#">Authors</a>
-          <a class="nav-a active-style" href="#">Cummunity</a>
-          <a class="nav-a active-style" href="#">Trending</a>
-        </nav>
-        <!-- Action Buttons -->
-        <div class="flex items-center gap-3">
-          <button
-            class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-[#283039] rounded-lg transition-colors active-style">
-            Log In
-          </button>
-          <button
-            class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20 active-style">
-            Sign Up
-          </button>
+        <div class="flex gap-3">
+          <nav class="flex items-center">
+            <a class="nav-a active-style hidden md:block" href="#">My library</a>
+            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-secondary/20 hover:bg-primary transition-colors active-style">
+              <span class="fill-light size-4">
+                <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+              </span>
+            </a>
+          </nav>
+          <!-- Action Buttons -->
+          <div class="flex items-center gap-3">
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-secondary/20 rounded-lg transition-colors active-style">
+              Log In
+            </button>
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20 active-style">
+              Sign Up
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -87,7 +94,7 @@
         <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-4">
           Master your craft with the <span class="text-primary">best developer books</span>.
         </h1>
-        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl font-light">
+        <p class="text-lg md:text-xl text-secondary mb-10 max-w-2xl font-light">
           Curated resources for engineering leaders, frontend wizards, and backend architects. Stop searching, start
           reading.
         </p>
@@ -97,22 +104,22 @@
             class="absolute -inset-1 bg-linear-to-r from-primary to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-500 group-hover:duration-200">
           </div>
           <div
-            class="relative flex items-center bg-card-light dark:bg-card-dark rounded-xl shadow-2xl p-2 border border-gray-200 dark:border-[#283039]">
-            <div class="px-4 stroke-gray-600 dark:stroke-gray-400">
+            class="relative flex items-center bg-card-light dark:bg-card-dark rounded-xl shadow-2xl p-2 border border-secondary/20">
+            <div class="px-4 stroke-secondary">
               <svg width="25px" height="25px" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </div>
             <input
-              class="flex-1 bg-transparent border-none focus:ring-0 text-txt-dark dark:text-txt-light placeholder-gray-400 h-12 text-lg outline-0"
+              class="flex-1 bg-transparent border-none focus:ring-0 text-light placeholder-secondary h-12 text-lg outline-0"
               placeholder="Search by title, author, or ISBN..." type="text" />
             <a href="search.html"
-              class="bg-gray-600 dark:bg-gray-400/20 hover:bg-primary stroke-txt-light p-3 rounded-lg transition-colors duration-200 ml-4 active-style">
+              class="bg-secondary/20 hover:bg-primary stroke-light p-3 rounded-lg transition-colors duration-200 ml-4 active-style">
               <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
           </a>
           </div>
         </div>
         <!-- Chips / Quick Filters -->
         <div class="mt-8 flex flex-wrap justify-center gap-3">
-          <p class="text-sm text-gray-500 dark:text-gray-400 py-1.5 mr-2">Popular:</p>
+          <p class="text-sm text-secondary py-1.5 mr-2">Popular:</p>
           <a class="filter-a active-style" href="#">React</a>
           <a class="filter-a active-style" href="#">Python</a>
           <a class="filter-a active-style" href="#">System Design</a>
@@ -126,8 +133,8 @@
     <section class="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold flex items-center gap-2">
-          <span class="stroke-primary">
-          <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M20.0005 7L14.1543 12.9375C14.0493 13.0441 13.9962 13.0976 13.9492 13.1396C13.1899 13.8193 12.0416 13.8193 11.2822 13.1396C11.2352 13.0976 11.1817 13.0442 11.0767 12.9375C10.9716 12.8308 10.9191 12.7774 10.8721 12.7354C10.1127 12.0557 8.96397 12.0557 8.20461 12.7354C8.15771 12.7773 8.10532 12.8305 8.00078 12.9367L4 17M20.0005 7L20 13M20.0005 7H14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+          <span class="stroke-primary size-8">
+          <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M20.0005 7L14.1543 12.9375C14.0493 13.0441 13.9962 13.0976 13.9492 13.1396C13.1899 13.8193 12.0416 13.8193 11.2822 13.1396C11.2352 13.0976 11.1817 13.0442 11.0767 12.9375C10.9716 12.8308 10.9191 12.7774 10.8721 12.7354C10.1127 12.0557 8.96397 12.0557 8.20461 12.7354C8.15771 12.7773 8.10532 12.8305 8.00078 12.9367L4 17M20.0005 7L20 13M20.0005 7H14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
           Trending this week
         </h2>
@@ -141,30 +148,25 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Book Card 1 -->
         <div
-          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-gray-800 overflow-hidden">
+          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
             <img alt="Book cover mockup with abstract minimalist geometric design"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
               data-alt="Book cover mockup with abstract minimalist geometric design"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
-            <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
-              4.9
-            </div>
           </div>
           <div class="p-4 flex flex-col flex-1">
             <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
             <h3
               class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
               Clean Architecture</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Robert C. Martin</p>
+            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
             <div class="mt-auto flex items-center justify-between">
               <span class="text-sm font-bold">$34.99</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
-                <span class="fill-txt-light">
-                  <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
+                <span class="fill-light size-4">
+                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
             </div>
@@ -172,30 +174,25 @@
         </div>
         <!-- Book Card 2 -->
         <div
-          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-gray-800 overflow-hidden">
-            <img alt="Book cover showing code on a screen with dark blue overlay"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              data-alt="Book cover showing code on a screen with dark blue overlay"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-DonN7yTwfwXdeqQBYAvN3eX1GaR9l09M-buKveoxlscWQwfm_mlo_geTldpQkZ6VERkkl49nxEc7imKKlXJg7Uc3LJhZEzELg0_NbPhTC2dQ00z30rxKcuH_mbDgwWrDrGRA-_uAeQQMRlPMzZPNVyMOjuNG1oyfFF6nDZe-2mSPDV5yDbaFwjD36Z2pLbgc2GfSVbUbR0FgNWJ-5xeYaqR8rUEfj1Y-zlIGXv9ZYJJXJUC44uNh7E0CTSnG9TzJfrUA2R2T2bc1" />
-            <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
-              4.8
-            </div>
+          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
+            <img alt="Book cover mockup with abstract minimalist geometric design"
+              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
+              data-alt="Book cover mockup with abstract minimalist geometric design"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
           </div>
           <div class="p-4 flex flex-col flex-1">
-            <div class="text-xs font-semibold text-primary mb-1">JavaScript</div>
+            <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
             <h3
               class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
-              Eloquent JavaScript</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Marijn Haverbeke</p>
+              Clean Architecture</h3>
+            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
             <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold">Free</span>
+              <span class="text-sm font-bold">$34.99</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
-                <span class="fill-txt-light">
-                  <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
+                <span class="fill-light size-4">
+                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
             </div>
@@ -203,30 +200,25 @@
         </div>
         <!-- Book Card 3 -->
         <div
-          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-gray-800 overflow-hidden">
-            <img alt="Book cover with complex colorful data visualization pattern"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              data-alt="Book cover with complex colorful data visualization pattern"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnafcrHxqHfavtEIsMk35WrUttI0RXFeI2E_5OY7DzbF3EX9qYf1Bq8LjpyLdHgKyy91QoXqhSBybdzqztGVosx_F_NOWbkr6nJXkKNG7dtdjzHj7NV6JhX3IOvfJO1T5YWurmXwwBc_7SG0hNCvyOke-hWTfAa8-D1mRLuaO0Y5JhDWn53I8slr3cBaDxdWfT85Ka6EnhyF4qQL2VTzmawYLiZXfN0NeTXlIAGL_FgiwkOTmjZetaQ3Bx7DkHkycwxfZp5HRZfyOi" />
-            <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
-              4.7
-            </div>
+          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
+            <img alt="Book cover mockup with abstract minimalist geometric design"
+              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
+              data-alt="Book cover mockup with abstract minimalist geometric design"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
           </div>
           <div class="p-4 flex flex-col flex-1">
-            <div class="text-xs font-semibold text-primary mb-1">Algorithms</div>
+            <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
             <h3
-              class="text-lg font-bold  leading-tight mb-1 group-hover:text-primary transition-colors">
-              Grokking Algorithms</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Aditya Bhargava</p>
+              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
+              Clean Architecture</h3>
+            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
             <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold">$42.00</span>
+              <span class="text-sm font-bold">$34.99</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
-                <span class="fill-txt-light">
-                  <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
+                <span class="fill-light size-4">
+                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
             </div>
@@ -234,30 +226,25 @@
         </div>
         <!-- Book Card 4 -->
         <div
-          class="group flex flex-col bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border border-gray-200 dark:border-[#283039] transition-all hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-gray-800 overflow-hidden">
-            <img alt="Book cover with sleek modern cyber security padlock illustration"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              data-alt="Book cover with sleek modern cyber security padlock illustration"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTocIDBXMULe25m1oYP3mjf3WD83NXXQghMUFBx1m8wtoT5zIiktyAIL1M0EoaedM5ittlJxRm6uKK8gO2C9klEQD6ENg9upv5iOtDqyq2zG8RHHlCpVEPUqFYPtRfq8P1MXF6P1QscoaGF7bXXQvJG70BjgxZe84PzqOF-8fONnQkN23F7SMQm0Yq_cnidDO-izVgt--KJqUTiJppZUAPoxZGAICIo5G-mwW56Qse1xsAQU58T0xKQOtj9fEHBk37q6oyi6XY0-e2" />
-            <div
-              class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px] text-yellow-400 filled">star</span>
-              5.0
-            </div>
+          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
+            <img alt="Book cover mockup with abstract minimalist geometric design"
+              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
+              data-alt="Book cover mockup with abstract minimalist geometric design"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
           </div>
           <div class="p-4 flex flex-col flex-1">
-            <div class="text-xs font-semibold text-primary mb-1">DevOps</div>
+            <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
             <h3
               class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
-              The Phoenix Project</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Gene Kim</p>
+              Clean Architecture</h3>
+            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
             <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold">$19.99</span>
+              <span class="text-sm font-bold">$34.99</span>
               <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-[#283039] hover:bg-primary transition-colors">
-                <span class="fill-txt-light">
-                  <svg width="16px" height="16px" viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
+                <span class="fill-light size-4">
+                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
                 </span>
               </button>
             </div>
@@ -267,59 +254,59 @@
     </section>
 
     <!-- Categories / Topics Grid -->
-    <section class="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12 bg-gray-50 dark:bg-txt-dark">
+    <section class="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12 bg-background-heavy-dark">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold">Explore Topics</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
             <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
           <span class="font-bold text-sm">Backend</span>
-          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+          <span class="text-xs text-secondary mt-1">1,204 books</span>
         </a>
         <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
             <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
           <span class="font-bold text-sm">Frontend</span>
-          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+          <span class="text-xs text-secondary mt-1">1,204 books</span>
         </a>
         <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
             <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
           <span class="font-bold text-sm">DevOps</span>
-          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+          <span class="text-xs text-secondary mt-1">1,204 books</span>
         </a>
         <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
             <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
           <span class="font-bold text-sm">Security</span>
-          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+          <span class="text-xs text-secondary mt-1">1,204 books</span>
         </a>
         <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
             <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
           <span class="font-bold text-sm">Cloud</span>
-          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+          <span class="text-xs text-secondary mt-1">1,204 books</span>
         </a>
         <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-gray-400 group-hover:stroke-primary transition-colors">
+          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
             <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
           </span>
           <span class="font-bold text-sm">Mobile</span>
-          <span class="text-xs text-gray-600 dark:text-gray-400 mt-1">1,204 books</span>
+          <span class="text-xs text-secondary mt-1">1,204 books</span>
         </a>
       </div>
     </section>
 
     <!-- Newsletter / CTA -->
     <section class="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-      <div class="relative overflow-hidden rounded-2xl bg-card-dark border border-[#283039]">
+      <div class="relative overflow-hidden rounded-2xl bg-card-dark border border-secondary/20">
         <!-- Abstract BG pattern -->
         <div class="absolute inset-0 opacity-20">
           <svg class="h-full w-full text-primary" fill="currentColor">
@@ -332,12 +319,12 @@
         <div class="relative px-6 py-12 md:px-12 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8">
           <div class="md:w-1/2">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Stay updated with new releases</h2>
-            <p class="text-gray-400">Get the latest additions to our library delivered straight to your inbox. No spam, just
+            <p class="text-gray-400 font-body">Get the latest additions to our library delivered straight to your inbox. No spam, just
               code books.</p>
           </div>
           <div class="md:w-1/2 w-full flex flex-col sm:flex-row gap-3">
             <input
-              class="flex-1 bg-background-dark border border-[#283039] text-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+              class="flex-1 bg-background-dark border border-secondary/20 text-light rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none placeholder:text-secondary"
               placeholder="you@example.com" type="email" />
             <button
               class="bg-primary hover:bg-primary/90 text-white font-bold px-6 py-3 rounded-lg transition-colors whitespace-nowrap active-style">
@@ -350,7 +337,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="w-full border-t border-gray-200 dark:border-[#283039] bg-background-light dark:bg-background-dark py-12">
+  <footer class="w-full border-t border-secondary/20 bg-background-dark py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
         class="border-gray-200 dark:border-[#283039] flex flex-col md:flex-row justify-between items-center gap-4">
