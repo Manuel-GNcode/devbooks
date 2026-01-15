@@ -1,9 +1,9 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/book", "destination": "/book.html" },
-    { "source": "/login", "destination": "/login.html" },
-    { "source": "/perfil", "destination": "/perfil.html" },
+    { "source": "/book", "destination": "/src/pages/book/book.html" },
+    { "source": "/login", "destination": "/src/pages/login/login.html" },
+    { "source": "/perfil", "destination": "/src/pages/perfil/perfil.html" },
     { "source": "/search", "destination": "/src/pages/search/search.html" }
   ]
 }
