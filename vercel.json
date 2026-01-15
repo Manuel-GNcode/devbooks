@@ -1,11 +1,10 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-
-    { "source": "/book", "destination": "/pages/book/book.html" },
-    { "source": "/login", "destination": "/pages/login/login.html" },
-    { "source": "/perfil", "destination": "/pages/perfil/perfil.html" },
-    { "source": "/search", "destination": "/pages/search/search.html" }
+    { "source": "/book", "destination": "/book.html" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/perfil", "destination": "/perfil.html" },
+    { "source": "/search", "destination": "/search.html" }
   ]
 }
 
