@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBooks | User</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-background-dark text-light min-h-screen flex flex-col font-display">
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 w-full border-b border-secondary/20 bg-background-dark backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-4">
+        <!-- Logo -->
+        <div class="flex gap-8">
+          <a href="/" class="flex items-center gap-3">
+            <div class="fill-primary size-6">
+              <svg viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g><path class="st0" d="M164.128,155.406c-0.017-11.098-0.017-20.759,1.346-29.9l-7.987,9.166 c-14.001,16.134-49.379,26.563-79.029,23.301c-29.666-3.262-42.346-18.986-28.345-35.128l105.4-110.292 c2.049-2.15,2.626-5.311,1.456-8.054c-1.163-2.727-3.856-4.5-6.825-4.5h-16.978c-4.968,0-9.719,1.982-13.206,5.52L28.527,98.174 c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06c0,26.196,32.92,47.824,62.578,51.078 c29.65,3.27,70.272-7.168,84.273-23.302l9.317-10.832c-1.673-5.402-2.676-11.04-2.676-16.945V155.406z"></path><path class="st0" d="M493.952,0h-18.375c-5.36,0-10.454,2.324-13.984,6.356l-111.84,128.316c-14,16.134-49.379,26.563-79.02,23.301 c-29.667-3.262-42.346-18.986-28.345-35.128l105.4-110.292c2.041-2.15,2.626-5.311,1.456-8.054c-1.172-2.727-3.856-4.5-6.825-4.5 H325.44c-4.968,0-9.727,1.982-13.206,5.52l-91.432,92.654c-18.76,19.638-17.89,30.544-17.89,61.089c0,21.812,0,301.06,0,301.06 c0,26.196,32.92,47.824,62.569,51.078c29.658,3.27,70.272-7.168,84.272-23.302L487.896,327.64 c8.69-10.103,13.474-22.984,13.474-36.315V7.418C501.37,3.328,498.051,0,493.952,0z"></path>
+              </g></g></svg>
+            </div>
+            <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
+          </a>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="flex gap-3">
+          <nav class="flex items-center">
+            <a class="nav-a active-style hidden md:block" href="#">My library</a>
+            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-secondary/20 hover:bg-primary transition-colors active-style">
+              <span class="fill-light size-4">
+                <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+              </span>
+            </a>
+          </nav>
+          <!-- Action Buttons -->
+          <div class="flex items-center gap-3">
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-secondary/20 rounded-lg transition-colors active-style">
+              Log In
+            </button>
+            <button
+              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20 active-style">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="grow flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
+    <!-- Abstract Background Elements -->
+    <div class="absolute inset-0 z-0 opacity-30 pointer-events-none">
+      <div class="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-primary/30 blur-[100px]"></div>
+      <div class="absolute top-[40%] -right-[10%] w-[50%] h-[50%] rounded-full bg-blue-600/20 blur-[120px]"></div>
+    </div>
+    <div class="relative z-10 w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <!-- Left Side: Marketing/Visual -->
+      <div class="hidden lg:flex flex-col gap-8">
+        <div class="space-y-4">
+          <h1 class="text-5xl font-bold leading-tight tracking-tight">
+            Level up your stack <br />
+            <span class="bg-clip-text text-transparent bg-linear-to-r from-primary to-purple-400">with the
+              best reads</span>
+          </h1>
+          <p class="text-lg text-secondary max-w-md leading-relaxed font-body">
+            Join 50,000+ developers discovering books on architecture, clean code, and emerging tech stacks. Curated by
+            the community.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="flex flex-col gap-2 p-4 rounded-xl bg-card-dark/50 border border-secondary/20 backdrop-blur-sm">
+            <span class="size-8 stroke-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M16 6l4 14"></path> <path d="M12 6v14"></path> <path d="M8 8v12"></path> <path d="M4 4v16"></path> </g></svg>
+            </span>
+            <h3 class="font-bold">Curated Lists</h3>
+            <p class="text-sm text-secondary">Hand-picked by tech leads</p>
+          </div>
+          <div
+            class="flex flex-col gap-2 p-4 rounded-xl bg-card-dark/50 border border-secondary/20 backdrop-blur-sm">
+            <span class="size-8 stroke-primary">
+              <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M9 8L5 11.6923L9 16M15 8L19 11.6923L15 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </span>
+            <h3 class="font-bold">Code Snippets</h3>
+            <p class="text-sm text-secondary">Learn directly from examples</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right Side: Auth Form -->
+      <div class="w-full max-w-120 mx-auto">
+        <div
+          class="bg-card-dark rounded-2xl border border-secondary/20 p-6 md:p-8">
+          <!-- Mobile Heading (visible only on small screens) -->
+          <div class="lg:hidden mb-6 text-center">
+            <h2 class="text-2xl font-bold">Welcome back</h2>
+            <p class="text-secondary text-sm mt-1">Enter your details to access your library</p>
+          </div>
+          <!-- Segmented Control -->
+          <div class="flex mb-8 bg-background-heavy-dark p-1 rounded-lg">
+            <label class="flex-1 text-center cursor-pointer group">
+              <input checked="" class="peer hidden" name="auth_mode" type="radio" value="login" />
+              <span
+                class="block px-4 py-2 text-sm font-medium rounded-md text-secondary transition-all peer-checked:bg-secondary/20 peer-checked:text-light peer-checked:shadow-sm">Log
+                In</span>
+            </label>
+            <label class="flex-1 text-center cursor-pointer group">
+              <input class="peer hidden" name="auth_mode" type="radio" value="register" />
+              <span
+                class="block px-4 py-2 text-sm font-medium rounded-md text-secondary transition-all peer-checked:bg-secondary/20 peer-checked:text-light peer-checked:shadow-sm">Sign
+                Up</span>
+            </label>
+          </div>
+          <form class="flex flex-col gap-5">
+            <!-- Email Input -->
+            <div class="space-y-2">
+              <label class="block text-sm font-medium text-light">Email Address</label>
+              <div class="relative">
+                <input
+                  class="w-full h-12 pl-4 pr-12 rounded-lg bg-slate-50 dark:bg-background-heavy-dark border border-secondary/20 text-light placeholder:text-secondary focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all outline-none font-body"
+                  placeholder="dev@example.com" type="email" />
+                <div
+                  class="absolute right-0 top-0 h-full w-12 flex items-center justify-center pointer-events-none">
+                  <span class="size-5 fill-secondary">
+                    <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Password Input -->
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <label class="block text-sm font-medium text-light">Password</label>
+                <a class="text-xs font-bold text-primary hover:text-blue-400 transition-colors" href="#">Forgot
+                  Password?</a>
+              </div>
+              <div class="relative">
+                <input
+                  class="w-full h-12 pl-4 pr-12 rounded-lg bg-slate-50 dark:bg-background-heavy-dark border border-secondary/20 text-light placeholder:text-secondary focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all outline-none font-body"
+                  placeholder="••••••••" type="password" />
+                <button
+                  class="absolute right-0 top-0 h-full w-12 flex items-center justify-center text-slate-400 dark:text-[#9dabb9]transition-colors cursor-pointer group"
+                  type="button">
+                  <span class="size-5 stroke-secondary group-hover:stroke-primary">
+                    <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <!-- Submit Button -->
+            <button
+              class="w-full h-12 mt-2 bg-primary hover:bg-blue-600 font-bold rounded-lg transition-all shadow-lg shadow-primary/25 active-style">
+              Continue
+            </button>
+          </form>
+          <!-- Divider -->
+          <div class="relative my-8">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-secondary/20"></div>
+            </div>
+            <div class="relative flex justify-center text-xs uppercase tracking-wide">
+              <span class="px-4 text-secondary font-semibold">Or
+                continue with</span>
+            </div>
+          </div>
+          <!-- Social Login -->
+          <div class="grid grid-cols-2 gap-4">
+            <button
+              class="flex items-center justify-center gap-2 h-11 rounded-lg border border-secondary/20 bg-background-heavy-dark hover:bg-primary transition-colors text-sm font-bold active-style">
+              <svg aria-hidden="true" class="h-5 w-5 fill-current" viewbox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z">
+                </path>
+              </svg>
+              GitHub
+            </button>
+            <button
+              class="flex items-center justify-center gap-2 h-11 rounded-lg border border-secondary/20 bg-background-heavy-dark hover:bg-primary transition-colors text-sm font-bold active-style">
+              <svg aria-hidden="true" class="h-5 w-5" viewbox="0 0 24 24">
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  fill="#4285F4"></path>
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  fill="#34A853"></path>
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                  fill="#FBBC05"></path>
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                  fill="#EA4335"></path>
+              </svg>
+              Google
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

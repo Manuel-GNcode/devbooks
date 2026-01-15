@@ -10,7 +10,8 @@ export default defineConfig({
         main: 'index.html',
         search: 'search.html',
         book: 'book.html',
-        perfil: 'perfil.html'
+        perfil: 'perfil.html',
+        login: 'login.html'
       }
     }
   }
