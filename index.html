@@ -78,7 +78,7 @@
         </p>
         <!-- Search Component -->
         <div class="w-full max-w-2xl relative group">
-          <div
+          <div id="bg-input-search"
             class="absolute -inset-1 bg-linear-to-r from-primary to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-500 group-hover:duration-200">
           </div>
           <div
@@ -87,22 +87,20 @@
               <svg width="25px" height="25px" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </div>
             <input
+              id="input-search"
+              type="text"
               class="flex-1 bg-transparent border-none focus:ring-0 text-light placeholder-secondary h-12 text-lg outline-0"
               placeholder="Search by title, author, or ISBN..." type="text" />
-            <a href="/search"
+            <button id="btn-search" href="/search"
               class="bg-secondary/20 hover:bg-primary stroke-light p-3 rounded-lg transition-colors duration-200 ml-4 active-style">
               <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          </a>
+          </button>
           </div>
         </div>
         <!-- Chips / Quick Filters -->
         <div class="mt-8 flex flex-wrap justify-center gap-3">
           <p class="text-sm text-secondary py-1.5 mr-2">Popular:</p>
-          <a class="filter-a active-style" href="#">React</a>
-          <a class="filter-a active-style" href="#">Python</a>
-          <a class="filter-a active-style" href="#">System Design</a>
-          <a class="filter-a active-style" href="#">Rust</a>
-          <a class="filter-a active-style" href="#">Machine Learning</a>
+          <div id="popular-categories" class="flex flex-wrap gap-3"></div>
         </div>
       </div>
     </section>
@@ -116,118 +114,15 @@
           </span>
           Trending this week
         </h2>
-        <a class="text-primary text-sm font-bold hover:underline flex items-center gap-1" href="#">
+        <button id="btn-trending-all" class="text-primary text-sm font-bold hover:underline flex items-center active-style" href="#">
           View all
           <span class="stroke-primary">
             <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
           </span>
-        </a>
+        </button>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Book Card 1 -->
-        <div
-          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
-            <img alt="Book cover mockup with abstract minimalist geometric design"
-              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
-              data-alt="Book cover mockup with abstract minimalist geometric design"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
-          </div>
-          <div class="p-4 flex flex-col flex-1">
-            <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
-            <h3
-              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
-              Clean Architecture</h3>
-            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
-            <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold">$34.99</span>
-              <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
-                <span class="fill-light size-4">
-                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Book Card 2 -->
-        <div
-          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
-            <img alt="Book cover mockup with abstract minimalist geometric design"
-              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
-              data-alt="Book cover mockup with abstract minimalist geometric design"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
-          </div>
-          <div class="p-4 flex flex-col flex-1">
-            <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
-            <h3
-              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
-              Clean Architecture</h3>
-            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
-            <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold">$34.99</span>
-              <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
-                <span class="fill-light size-4">
-                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Book Card 3 -->
-        <div
-          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
-            <img alt="Book cover mockup with abstract minimalist geometric design"
-              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
-              data-alt="Book cover mockup with abstract minimalist geometric design"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
-          </div>
-          <div class="p-4 flex flex-col flex-1">
-            <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
-            <h3
-              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
-              Clean Architecture</h3>
-            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
-            <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold">$34.99</span>
-              <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
-                <span class="fill-light size-4">
-                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Book Card 4 -->
-        <div
-          class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-          <div class="relative aspect-3/4 bg-secondary overflow-hidden">
-            <img alt="Book cover mockup with abstract minimalist geometric design"
-              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
-              data-alt="Book cover mockup with abstract minimalist geometric design"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
-          </div>
-          <div class="p-4 flex flex-col flex-1">
-            <div class="text-xs font-semibold text-primary mb-1">Architecture</div>
-            <h3
-              class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
-              Clean Architecture</h3>
-            <p class="text-sm text-secondary mb-4">Robert C. Martin</p>
-            <div class="mt-auto flex items-center justify-between">
-              <span class="text-sm font-bold">$34.99</span>
-              <button
-                class="w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors">
-                <span class="fill-light size-4">
-                  <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
+
+      <div id="trending-area" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       </div>
     </section>
 

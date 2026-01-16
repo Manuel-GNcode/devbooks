@@ -1,1 +1,68 @@
+import { librosProgramacion, categoriasPopulares } from "./assets/data";
+
+const $trendingArea = document.getElementById('trending-area');
+const $btnTrendingAll = document.getElementById('btn-trending-all');
+const $popularCategories = document.getElementById('popular-categories');
+const $btnSearch = document.getElementById('btn-search');
+const $inputSearch = document.getElementById('input-search');
+const $bgInputSearch = document.getElementById('bg-input-search');
+
+const cardHTML = (book)=>`
+      <div class="group flex flex-col bg-card-dark rounded-xl overflow-hidden border border-secondary/10 transition-all duration-150 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+        <div class="relative aspect-3/3 bg-secondary overflow-hidden">
+          <img alt="Book cover mockup with abstract minimalist geometric design"
+              class="w-full h-full object-cover transition-transform duration-150 group-hover:scale-105"
+              data-alt="Book cover mockup with abstract minimalist geometric design"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsXDeht6p1kvDYzCvoBtCh6E1P2udMnHswPlMPsp1QosKYHvJ76-ENWJBOfzCiJ2beACFGjObmZO0rWIsGfETTb_0ENAAMn3zDQF_eLsQzhYG7XF9QB792Wo7ggC0FhYUlWGihfa2ME05A3Ey1LHBbYfEnj0pOrByt69CiZXnAiPiOz8yFMuAfPuKELmelgSrn8ojnxdjVR03wdlBLrLoc4fGwo6dlWDHR1FW58RZiZUUEhgqmAQCA_kaig0FT_ycJbAqbxTeSI5b1" />
+        </div>
+        <div class="p-4 flex flex-col flex-1 relative">
+          <div class="text-xs font-semibold text-primary mb-1">${book.categoria}</div>
+          <h3
+            class="text-lg font-bold leading-tight mb-1 group-hover:text-primary transition-colors">
+            ${book.titulo}</h3>
+          <p class="text-sm text-secondary mb-0">${book.autor}</p>
+          <button class="absolute m-4 bottom-0 right-0 w-8 h-8 flex items-center justify-center rounded-full bg-secondary/20 hover:bg-primary transition-colors active-style">
+            <span class="fill-light size-4">
+              <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+  `;
+
+const chipHTML = (chip)=>`
+    <a class="filter-a active-style" href="/search.html?text=${encodeURIComponent(chip)}">${chip}</a>
+    `
+
+const renderData = (data, container, elementHTML)=>{
+  container.innerHTML = '';
+  data.forEach(item => {
+    container.innerHTML += elementHTML(item);
+  })
+}
+
+renderData(librosProgramacion.slice(0,4), $trendingArea, cardHTML);
+renderData(categoriasPopulares, $popularCategories, chipHTML);
+
+
+$btnTrendingAll.addEventListener('click', ()=>{
+  renderData(librosProgramacion.slice(0,8), $trendingArea, cardHTML);
+  $btnTrendingAll.style.display = 'none';
+})
+
+$btnSearch.addEventListener('click', ()=>{
+  const searchContent = $inputSearch.value.trim();
+  if (searchContent) {
+    window.location.href = `search.html?text=${encodeURIComponent(searchContent)}`;
+  }
+  else {
+    $bgInputSearch.classList.add('empty-input');
+    setTimeout(() => {
+      $bgInputSearch.classList.remove('empty-input');
+    }, 1000);
+  }
+})
+
+
+
 

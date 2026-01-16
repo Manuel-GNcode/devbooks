@@ -43,4 +43,8 @@
   .categories-a {
     @apply flex flex-col items-center justify-center p-6 bg-card-dark border border-secondary/20 rounded-xl hover:bg-primary/5 hover:border-primary/50 transition-all;
   }
+  .empty-input {
+    @apply bg-linear-to-r from-red-400 to-red-600 opacity-50;
+  }
 }
+
