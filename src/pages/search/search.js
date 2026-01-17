@@ -40,7 +40,6 @@ const bookHTML = (book)=> `
     </div>
   </div>
 `
-
 const renderData = (data, container, elementHTML)=>{
   container.innerHTML = '';
   data.forEach(item => {
@@ -48,4 +47,18 @@ const renderData = (data, container, elementHTML)=>{
   })
 }
 
-renderData(librosProgramacion, $resultBooks, bookHTML);
+const filtrarLibros = (libros, texto)=> {
+  const busqueda = texto.toLowerCase();
+  const campos = ["titulo", "autor", "categoria", "lenguaje", "descripcion"];
+
+  return libros.filter(libro =>
+    campos.some(campo =>
+      libro[campo].toLowerCase().includes(busqueda)
+    )
+  );
+}
+
+let searchResult = filtrarLibros(librosProgramacion, search);
+
+
+renderData(searchResult, $resultBooks, bookHTML);
