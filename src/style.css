@@ -46,5 +46,8 @@
   .empty-input {
     @apply bg-linear-to-r from-red-400 to-red-600 opacity-50;
   }
+  .add-wishlist {
+    @apply bg-primary;
+  }
 }
 

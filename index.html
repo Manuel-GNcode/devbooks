@@ -30,26 +30,16 @@
         </div>
 
         <!-- Desktop Nav -->
-        <div class="flex gap-3">
-          <nav class="flex items-center">
-            <a class="nav-a active-style hidden md:block" href="#">My library</a>
-            <a class="md:hidden w-8 h-8 flex items-center justify-center rounded-md bg-secondary/20 hover:bg-primary transition-colors active-style">
-              <span class="fill-light size-4">
-                <svg viewBox="-4 0 30 30"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g stroke="none" stroke-width="1"> <g transform="translate(-419.000000, -153.000000)"> <path d="M437,153 L423,153 C420.791,153 419,154.791 419,157 L419,179 C419,181.209 420.791,183 423,183 L430,176 L437,183 C439.209,183 441,181.209 441,179 L441,157 C441,154.791 439.209,153 437,153"> </path> </g> </g> </g></svg>
-              </span>
-            </a>
-          </nav>
+        <div class="flex gap-3 items-center">
           <!-- Action Buttons -->
-          <div class="flex items-center gap-3">
-            <button
-              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-secondary/20 rounded-lg transition-colors active-style">
-              Log In
-            </button>
-            <button
-              class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20 active-style">
-              Sign Up
-            </button>
-          </div>
+          <button id="btn-login"
+            class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-transparent hover:bg-secondary/20 rounded-lg transition-colors active-style">
+            Log In
+          </button>
+          <button id="btn-signup"
+            class="flex items-center justify-center px-4 py-2 text-sm font-bold bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20 active-style">
+            Sign Up
+          </button>
         </div>
       </div>
     </div>
@@ -131,49 +121,7 @@
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold">Explore Topics</h2>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
-            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
-          </span>
-          <span class="font-bold text-sm">Backend</span>
-          <span class="text-xs text-secondary mt-1">1,204 books</span>
-        </a>
-        <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
-            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
-          </span>
-          <span class="font-bold text-sm">Frontend</span>
-          <span class="text-xs text-secondary mt-1">1,204 books</span>
-        </a>
-        <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
-            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
-          </span>
-          <span class="font-bold text-sm">DevOps</span>
-          <span class="text-xs text-secondary mt-1">1,204 books</span>
-        </a>
-        <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
-            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
-          </span>
-          <span class="font-bold text-sm">Security</span>
-          <span class="text-xs text-secondary mt-1">1,204 books</span>
-        </a>
-        <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
-            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
-          </span>
-          <span class="font-bold text-sm">Cloud</span>
-          <span class="text-xs text-secondary mt-1">1,204 books</span>
-        </a>
-        <a class="categories-a group" href="#">
-          <span class="mb-3 stroke-secondary group-hover:stroke-primary transition-colors">
-            <svg class="size-10" viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path d="M17 15H12M7 10L10 12.5L7 15M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8031C21 16.921 21 17.48 20.7822 17.9074C20.5905 18.2837 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2837 3.21799 17.9074C3 17.4796 3 16.9203 3 15.8002Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
-          </span>
-          <span class="font-bold text-sm">Mobile</span>
-          <span class="text-xs text-secondary mt-1">1,204 books</span>
-        </a>
+      <div id="topics-area" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
       </div>
     </section>
 
