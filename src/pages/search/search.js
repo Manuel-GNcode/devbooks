@@ -1,10 +1,21 @@
 import { librosProgramacion } from "../../assets/data";
 
 const $resultBooks = document.getElementById('result-books');
+const $inputSearchHeader = document.getElementById('input-search-header')
+const $btnSearchHeader = document.getElementById('btn-search-header')
+
+const $inputSearchMobile = document.getElementById('input-search-mobile')
+const $btnSearchMobile = document.getElementById('btn-search-mobile')
+
+const $searchText = document.getElementById('search-text');
+const $searchcount = document.getElementById('search-count');
+
+const $btnCategories = document.getElementById('btn-categories');
+const $searchCategoriesCtr = document.getElementById('search-categories-ctr')
 
 // Busqueda del usuario
 const params = new URLSearchParams(window.location.search);
-const search = params.get("text");
+let search = params.get("text");
 
 const bookHTML = (book)=> `
   <div class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
@@ -48,17 +59,47 @@ const renderData = (data, container, elementHTML)=>{
 }
 
 const filtrarLibros = (libros, texto)=> {
-  const busqueda = texto.toLowerCase();
   const campos = ["titulo", "autor", "categoria", "lenguaje", "descripcion"];
-
   return libros.filter(libro =>
     campos.some(campo =>
-      libro[campo].toLowerCase().includes(busqueda)
+      libro[campo].toLowerCase().includes(texto)
     )
   );
 }
+const searchNewBooks = (wordToFind)=>{
+  const busqueda = wordToFind? wordToFind.toLowerCase().trim(): '';
+  $searchText.innerHTML = busqueda? `Search results for "${busqueda}"`: 'All books';
+  const arrayResult = filtrarLibros(librosProgramacion, busqueda? busqueda: '');
+  $searchcount.innerHTML = `${arrayResult.length} results found`
+  renderData(arrayResult.slice(0,8), $resultBooks, bookHTML);
 
-let searchResult = filtrarLibros(librosProgramacion, search);
+  console.log(search)
+}
+searchNewBooks(search);
 
+// Desktop input
+$inputSearchHeader.addEventListener('keydown', event=>{
+  if (event.key === 'Enter') {
+    $btnSearchHeader.click();
+  }
+})
+$btnSearchHeader.addEventListener('click', ()=>{
+  search = $inputSearchHeader.value;
+  searchNewBooks(search)
+})
+//Mobile input
+$inputSearchMobile.addEventListener('keydown', event=>{
+  if (event.key === 'Enter') {
+    $btnSearchMobile.click();
+  }
+})
+$btnSearchMobile.addEventListener('click', ()=>{
+  search = $inputSearchMobile.value;
+  searchNewBooks(search)
+})
 
-renderData(searchResult, $resultBooks, bookHTML);
+// left aside
+$btnCategories.addEventListener('click', ()=>{
+  $searchCategoriesCtr.classList.toggle('hidden');
+  $btnCategories.classList.toggle('active-categories');
+})

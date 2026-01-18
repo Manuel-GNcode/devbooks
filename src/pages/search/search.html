@@ -20,14 +20,15 @@
             </div>
             <h2 class="text-xl font-bold tracking-tight">DevBooks</h2>
           </a>
-          <label class="hidden md:flex items-center min-w-40 h-10 lg:w-100 bg-secondary/20 rounded-xl">
-            <span class="px-3 stroke-secondary">
-              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            </span>
-            <input
+
+          <div class="group hidden md:flex items-center min-w-70 h-10 lg:w-100 bg-secondary/20 rounded-xl pl-4 overflow-hidden">
+            <input id="input-search-header" name="user_search" autocomplete="off"
                 class="w-full text-light focus:outline-0 h-full placeholder:text-secondary"
                 placeholder="Search books, authors..." />
-          </label>
+            <button id="btn-search-header" class="stroke-secondary group-focus-within:bg-primary group-focus-within:stroke-light active-style h-full px-4">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </button>
+          </div>
         </div>
 
         <!-- Desktop Nav -->
@@ -51,21 +52,14 @@
       <!-- Left Sidebar -->
       <aside class="w-full lg:w-70 shrink-0 flex flex-col gap-6">
         <!-- Mobile Filters Toggle (Visible only on small screens) -->
-        <label class="flex md:hidden items-center min-w-40 h-10 lg:w-100 bg-secondary/20 rounded-xl">
-          <span class="px-4 stroke-secondary">
-            <svg width="20px" height="20px" fill="none" viewBox="0 0 24 24">
-              <g stroke-width="0"></g>
-              <g stroke-linecap="round" stroke-linejoin="round"></g>
-              <g><path
-                  d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </g>
-            </svg>
-          </span>
-          <input
-            class="w-full text-light focus:outline-0 h-full placeholder:text-secondary"
-            placeholder="Search books, authors..." />
-        </label>
+        <div class="pl-4 group flex md:hidden items-center min-w-40 h-10 bg-secondary/20 rounded-xl overflow-hidden">
+          <input id="input-search-mobile" autocomplete="off"
+                class="w-full text-light focus:outline-0 h-full placeholder:text-secondary"
+                placeholder="Search books, authors..." />
+            <button id="btn-search-mobile" class="stroke-secondary group-focus-within:bg-primary group-focus-within:stroke-light active-style h-full px-4">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </button>
+        </div>
         <button class="active-style lg:hidden w-full flex items-center justify-between p-4 bg-white dark:bg-[#1A232C] rounded-lg shadow-sm">
           <span class="font-bold">Filters</span>
           <span class="size-6 stroke-light">
@@ -82,36 +76,62 @@
           <!-- Categories -->
           <div class="flex flex-col gap-2">
             <h3 class="text-xs font-bold uppercase tracking-wider text-light mb-2 font-display">Categories</h3>
-            <label class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 cursor-pointer group">
-              <span class="size-6 stroke-primary">
+            <div id="btn-categories" class="flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer active-categories stroke-secondary text-secondary hover:bg-secondary/20">
+              <span class="size-6">
                 <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M3 8.2C3 7.07989 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H9.67452C10.1637 5 10.4083 5 10.6385 5.05526C10.8425 5.10425 11.0376 5.18506 11.2166 5.29472C11.4184 5.4184 11.5914 5.59135 11.9373 5.93726L12.0627 6.06274C12.4086 6.40865 12.5816 6.5816 12.7834 6.70528C12.9624 6.81494 13.1575 6.89575 13.3615 6.94474C13.5917 7 13.8363 7 14.3255 7H17.8C18.9201 7 19.4802 7 19.908 7.21799C20.2843 7.40973 20.5903 7.71569 20.782 8.09202C21 8.51984 21 9.0799 21 10.2V15.8C21 16.9201 21 17.4802 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.07989 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
               </span>
-              <span class="text-primary font-medium text-sm flex-1">All Categories</span>
-              <span class="text-primary text-xs font-bold">42</span>
-            </label>
-            <label
-              class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
-              <span class="size-6 stroke-secondary group-hover:stroke-light">
-                <svg viewBox="0 0 24 24" fill="none"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M9 8L5 11.6923L9 16M15 8L19 11.6923L15 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-              </span>
-              <span class="text-secondary text-sm font-medium leading-normal group-hover:text-light">Programming</span>
-            </label>
-            <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
-              <span class="fill-secondary size-5 group-hover:fill-light">
-                <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path fill-rule="evenodd" d="M19,3 C20.6568542,3 22,4.34314575 22,6 L22,8 C22,9.65685425 20.6568542,11 19,11 L18,11 L18,13 L19,13 C20.6568542,13 22,14.3431458 22,16 L22,18 C22,19.6568542 20.6568542,21 19,21 L5,21 C3.34314575,21 2,19.6568542 2,18 L2,16 C2,14.3431458 3.34314575,13 5,13 L6,13 L6,11 L5,11 C3.34314575,11 2,9.65685425 2,8 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 Z M19,15 L5,15 C4.44771525,15 4,15.4477153 4,16 L4,18 C4,18.5522847 4.44771525,19 5,19 L19,19 C19.5522847,19 20,18.5522847 20,18 L20,16 C20,15.4477153 19.5522847,15 19,15 Z M7,16 C7.55228475,16 8,16.4477153 8,17 C8,17.5522847 7.55228475,18 7,18 C6.44771525,18 6,17.5522847 6,17 C6,16.4477153 6.44771525,16 7,16 Z M16,11 L8,11 L8,13 L16,13 L16,11 Z M19,5 L5,5 C4.44771525,5 4,5.44771525 4,6 L4,8 C4,8.55228475 4.44771525,9 5,9 L19,9 C19.5522847,9 20,8.55228475 20,8 L20,6 C20,5.44771525 19.5522847,5 19,5 Z M7,6 C7.55228475,6 8,6.44771525 8,7 C8,7.55228475 7.55228475,8 7,8 C6.44771525,8 6,7.55228475 6,7 C6,6.44771525 6.44771525,6 7,6 Z"></path> </g></svg>
-              </span>
-              <span
-                class="text-secondary text-sm font-medium leading-normal group-hover:text-light">System
-                Design</span>
-            </label>
-            <label
-              class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
-              <span class="size-6 fill-secondary group-hover:fill-light">
-                <svg viewBox="0 0 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><g> <path class="st0" d="M256.001,0L29.89,130.537c0,47.476,4.506,88.936,12.057,125.463C88.61,481.721,256.001,512,256.001,512 s167.389-30.279,214.053-256c7.551-36.527,12.057-77.986,12.057-125.463L256.001,0z M256.118,466.723 c-0.035-0.012-0.082-0.028-0.117-0.039v-47.672V256H140.77H91.122c-6.67-29.738-11.109-63.506-12.394-101.93L255.999,51.728h0.002 v51.73V256h115.27h49.625C385.636,413.404,287.327,456.774,256.118,466.723z"></path> </g> </g></svg>
-              </span>
-              <span
-                class="text-secondary text-sm font-medium leading-normal group-hover:text-light">Cybersecurity</span>
-            </label>
+              <span class="font-medium text-sm flex-1">All Categories</span>
+              <span class="text-xs font-bold">3</span>
+            </div>
+            <div id="search-categories-ctr">
+              <div
+                class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
+                <span class="size-6 stroke-secondary group-hover:stroke-light">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g>
+                      <path d="M9 8L5 11.6923L9 16M15 8L19 11.6923L15 16" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="text-secondary text-sm font-medium leading-normal group-hover:text-light">Programming</span>
+              </div>
+              <div
+                class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
+                <span class="fill-secondary size-5 group-hover:fill-light">
+                  <svg viewBox="0 0 24 24">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g>
+                      <path fill-rule="evenodd"
+                        d="M19,3 C20.6568542,3 22,4.34314575 22,6 L22,8 C22,9.65685425 20.6568542,11 19,11 L18,11 L18,13 L19,13 C20.6568542,13 22,14.3431458 22,16 L22,18 C22,19.6568542 20.6568542,21 19,21 L5,21 C3.34314575,21 2,19.6568542 2,18 L2,16 C2,14.3431458 3.34314575,13 5,13 L6,13 L6,11 L5,11 C3.34314575,11 2,9.65685425 2,8 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 Z M19,15 L5,15 C4.44771525,15 4,15.4477153 4,16 L4,18 C4,18.5522847 4.44771525,19 5,19 L19,19 C19.5522847,19 20,18.5522847 20,18 L20,16 C20,15.4477153 19.5522847,15 19,15 Z M7,16 C7.55228475,16 8,16.4477153 8,17 C8,17.5522847 7.55228475,18 7,18 C6.44771525,18 6,17.5522847 6,17 C6,16.4477153 6.44771525,16 7,16 Z M16,11 L8,11 L8,13 L16,13 L16,11 Z M19,5 L5,5 C4.44771525,5 4,5.44771525 4,6 L4,8 C4,8.55228475 4.44771525,9 5,9 L19,9 C19.5522847,9 20,8.55228475 20,8 L20,6 C20,5.44771525 19.5522847,5 19,5 Z M7,6 C7.55228475,6 8,6.44771525 8,7 C8,7.55228475 7.55228475,8 7,8 C6.44771525,8 6,7.55228475 6,7 C6,6.44771525 6.44771525,6 7,6 Z">
+                      </path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="text-secondary text-sm font-medium leading-normal group-hover:text-light">System
+                  Design</span>
+              </div>
+              <div
+                class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
+                <span class="size-6 fill-secondary group-hover:fill-light">
+                  <svg viewBox="0 0 512 512" xml:space="preserve">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g>
+                      <g>
+                        <path class="st0"
+                          d="M256.001,0L29.89,130.537c0,47.476,4.506,88.936,12.057,125.463C88.61,481.721,256.001,512,256.001,512 s167.389-30.279,214.053-256c7.551-36.527,12.057-77.986,12.057-125.463L256.001,0z M256.118,466.723 c-0.035-0.012-0.082-0.028-0.117-0.039v-47.672V256H140.77H91.122c-6.67-29.738-11.109-63.506-12.394-101.93L255.999,51.728h0.002 v51.73V256h115.27h49.625C385.636,413.404,287.327,456.774,256.118,466.723z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span class="text-secondary text-sm font-medium leading-normal group-hover:text-light">Cybersecurity</span>
+              </div>
+            </div>
           </div>
           <div class="h-px bg-slate-200 dark:bg-[#283039] w-full"></div>
           <!-- Filter Groups -->
@@ -167,10 +187,9 @@
       <main class="flex flex-col flex-1 min-w-0">
         <!-- Header & Chips -->
         <div class="flex flex-col mb-6">
-          <h2 class="tracking-tight text-[28px] font-bold leading-tight text-left pb-3">
-            Search Results for "Algorithms"</h2>
+          <h2 id="search-text" class="tracking-tight text-[28px] font-bold leading-tight text-left pb-3"></h2>
           <div class="flex gap-3 py-2 flex-wrap items-center">
-            <button
+            <!-- <button
               class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-secondary/20 hover:bg-secondary/30 transition-colors pl-4 pr-3 active-style">
               <p class="text-sm font-medium leading-normal text-secondary">Python</p>
               <span class="size-4 fill-secondary">
@@ -183,9 +202,9 @@
               <span class="size-4 fill-secondary">
                 <svg viewBox="0 0 24 24"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"></path> </g></svg>
               </span>
-            </button>
+            </button> -->
             <div class="ml-auto flex items-center gap-3">
-              <span class="text-slate-500 dark:text-[#9dabb9] text-sm hidden sm:block">42 results found</span>
+              <span id="search-count" class="text-slate-500 dark:text-[#9dabb9] text-sm hidden sm:block"></span>
             </div>
           </div>
         </div>

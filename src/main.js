@@ -4,7 +4,7 @@ const $trendingArea = document.getElementById('trending-area');
 const $btnTrendingAll = document.getElementById('btn-trending-all');
 const $popularCategories = document.getElementById('popular-categories');
 const $btnSearch = document.getElementById('btn-search');
-const $inputSearch = document.getElementById('input-search');
+const $inputSearch = document.getElementById('input-search-home');
 const $bgInputSearch = document.getElementById('bg-input-search');
 const $btnLogin = document.getElementById('btn-login');
 const $btnSignup = document.getElementById('btn-signup');
@@ -71,10 +71,7 @@ $btnSearch?.addEventListener('click', ()=>{
     window.location.href = `/search?text=${encodeURIComponent(searchContent)}`;
   }
   else {
-    $bgInputSearch.classList.add('empty-input');
-    setTimeout(() => {
-      $bgInputSearch.classList.remove('empty-input');
-    }, 1000);
+    window.location.href = `/search`;;
   }
 })
 
