@@ -1,4 +1,4 @@
-import { librosProgramacion } from "../../assets/data";
+import { librosProgramacion, allCategories, allLanguages } from "../../assets/data";
 
 const $resultBooks = document.getElementById('result-books');
 const $inputSearchHeader = document.getElementById('input-search-header')
@@ -12,10 +12,14 @@ const $searchcount = document.getElementById('search-count');
 
 const $btnCategories = document.getElementById('btn-categories');
 const $searchCategoriesCtr = document.getElementById('search-categories-ctr')
+const $categoriesQuantity = document.getElementById('categories-quantity');
+const $searchLanguagesCtr = document.getElementById('search-languages-ctr');
 
 // Busqueda del usuario
 const params = new URLSearchParams(window.location.search);
 let search = params.get("text");
+let category = '';
+let language = '';
 
 const bookHTML = (book)=> `
   <div class="group flex flex-col bg-card-dark rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
@@ -58,24 +62,21 @@ const renderData = (data, container, elementHTML)=>{
   })
 }
 
-const filtrarLibros = (libros, texto)=> {
-  const campos = ["titulo", "autor", "categoria", "lenguaje", "descripcion"];
-  return libros.filter(libro =>
-    campos.some(campo =>
-      libro[campo].toLowerCase().includes(texto)
-    )
-  );
+const filterBookByWord =  (arrObject, word, categorySelected, languageSelected)=> {
+  const campos = Object.keys(arrObject[0]).slice(1);
+  return arrObject.filter(item =>
+    campos.some(campo => item[campo].toLowerCase().includes(word)
+    && item.categoria.includes(categorySelected)
+    && item.lenguaje.includes(languageSelected)
+  ));
 }
 const searchNewBooks = (wordToFind)=>{
   const busqueda = wordToFind? wordToFind.toLowerCase().trim(): '';
   $searchText.innerHTML = busqueda? `Search results for "${busqueda}"`: 'All books';
-  const arrayResult = filtrarLibros(librosProgramacion, busqueda? busqueda: '');
+  const arrayResult = filterBookByWord(librosProgramacion, busqueda, category, language);
   $searchcount.innerHTML = `${arrayResult.length} results found`
-  renderData(arrayResult.slice(0,8), $resultBooks, bookHTML);
-
-  console.log(search)
+  renderData(arrayResult.slice(0,9), $resultBooks, bookHTML);
 }
-searchNewBooks(search);
 
 // Desktop input
 $inputSearchHeader.addEventListener('keydown', event=>{
@@ -103,3 +104,30 @@ $btnCategories.addEventListener('click', ()=>{
   $searchCategoriesCtr.classList.toggle('hidden');
   $btnCategories.classList.toggle('active-categories');
 })
+const categoryHTML = (category)=>`
+  <div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-[#283039] cursor-pointer transition-colors group">
+    <p class="text-secondary text-sm font-medium leading-normal group-hover:text-light">${category}</p>
+  </div>
+`
+const languageHTML = (language)=>`
+  <label class="flex items-center gap-3 cursor-pointer group">
+    <div class="relative flex items-center">
+      <input class="peer size-4 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-[#283039] checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0" type="checkbox" />
+        <span class="absolute opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-1/2 pointer-events-none stroke-light size-3">
+          <svg viewBox="0 0 24 24" fill="none" ><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </span>
+    </div>
+    <span class="text-secondary text-sm group-hover:text-primary transition-colors">${language}</span>
+  </label>
+`
+
+// Renderizado inicial
+// Busqueda inicial
+searchNewBooks(search);
+
+// Renderizado de categorias
+renderData(allCategories, $searchCategoriesCtr, categoryHTML);
+$categoriesQuantity.innerText = allCategories.length;
+
+//renderizado de lenguajes
+renderData(allLanguages, $searchLanguagesCtr, languageHTML);

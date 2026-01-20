@@ -5,7 +5,6 @@ const $btnTrendingAll = document.getElementById('btn-trending-all');
 const $popularCategories = document.getElementById('popular-categories');
 const $btnSearch = document.getElementById('btn-search');
 const $inputSearch = document.getElementById('input-search-home');
-const $bgInputSearch = document.getElementById('bg-input-search');
 const $btnLogin = document.getElementById('btn-login');
 const $btnSignup = document.getElementById('btn-signup');
 const $topicsArea = document.getElementById('topics-area');
@@ -73,6 +72,9 @@ $btnSearch?.addEventListener('click', ()=>{
   else {
     window.location.href = `/search`;;
   }
+})
+$inputSearch.addEventListener('keydown', event=>{
+  if (event.key === 'Enter') $btnSearch.click();
 })
 
 $btnTrendingAll?.addEventListener('click', ()=>{
