@@ -48,7 +48,7 @@
   </header>
 
   <div class="flex grow flex-col w-full max-w-400 mx-auto">
-    <div class="px-4 md:px-10 py-5 flex flex-col lg:flex-row gap-8">
+    <div class="px-4 md:px-10 flex flex-col lg:flex-row">
       <!-- Left Sidebar -->
       <aside class="w-full lg:w-70 shrink-0 flex flex-col gap-6">
         <!-- Mobile Filters Toggle (Visible only on small screens) -->
@@ -67,7 +67,7 @@
           </span>
         </button>
         <!-- Desktop Sidebar Content -->
-        <div class="hidden lg:flex flex-col gap-8 sticky top-24 font-body">
+        <div id="aside-desktop" class="hidden lg:flex flex-col gap-8 sticky top-16 font-body py-5 pr-4">
           <div class="flex flex-col">
             <h1 class="text-xl font-bold leading-normal mb-1 font-display">Filters</h1>
             <p class="text-secondary text-sm font-normal leading-normal">Refine your search results
@@ -136,7 +136,7 @@
         </div>
       </aside>
       <!-- Main Content Area -->
-      <main class="flex flex-col flex-1 min-w-0">
+      <main class="flex flex-col flex-1 min-w-0 py-5 pl-4">
         <!-- Header & Chips -->
         <div class="flex flex-col mb-6">
           <h2 id="search-text" class="tracking-tight text-[28px] font-bold leading-tight text-left pb-3"></h2>
@@ -164,7 +164,7 @@
         <div id="result-books" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
         </div>
         <!-- Pagination -->
-        <div class="flex justify-center mt-12 mb-8">
+        <div class="flex justify-center mt-6">
           <div
             class="flex items-center gap-2 bg-white dark:bg-[#1A232C] p-2 rounded-lg border border-slate-200 dark:border-[#2A3441] shadow-sm">
             <button

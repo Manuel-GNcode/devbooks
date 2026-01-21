@@ -15,6 +15,8 @@ const $searchCategoriesCtr = document.getElementById('search-categories-ctr')
 const $categoriesQuantity = document.getElementById('categories-quantity');
 const $searchLanguagesCtr = document.getElementById('search-languages-ctr');
 
+const $asideDesktop = document.getElementById('aside-desktop');
+
 // Busqueda del usuario
 const params = new URLSearchParams(window.location.search);
 let search = params.get("text");
@@ -120,7 +122,6 @@ const languageHTML = (language)=>`
     <span class="text-secondary text-sm group-hover:text-primary transition-colors">${language}</span>
   </label>
 `
-
 // Renderizado inicial
 // Busqueda inicial
 searchNewBooks(search);

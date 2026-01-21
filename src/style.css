@@ -50,3 +50,25 @@
     @apply text-primary stroke-primary bg-primary/10 hover:bg-primary/20;
   }
 }
+
+#aside-desktop {
+  height: calc(100dvh - 64px);
+  overflow-y: auto;
+}
+#aside-desktop::-webkit-scrollbar {
+  width: 20px;
+}
+#aside-desktop::-webkit-scrollbar-track {
+  background: #99a1af11;
+}
+#aside-desktop::-webkit-scrollbar-thumb {
+  background: #99a1af; /* barra */
+  border-radius: 16px;
+  border: 6px solid transparent;
+  background-clip: padding-box;
+}
+#aside-desktop::-webkit-scrollbar-thumb:hover {
+  background: #137fec;
+  border: 6px solid transparent;
+  background-clip: padding-box;
+}
